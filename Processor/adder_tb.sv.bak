@@ -1,0 +1,61 @@
+`timescale 1ns/1ps
+
+module adder_tb();
+    // Parámetros
+    localparam WIDTH = 32;
+    
+    // Señales de prueba
+    logic [WIDTH-1:0] a;
+    logic [WIDTH-1:0] b;
+    logic [WIDTH-1:0] y;
+
+    // Instancia del módulo
+    adder #(WIDTH) dut(
+        .a (a),
+        .b (b),
+        .y (y)
+    );
+
+    // Estímulos y verificación
+    initial begin
+        $display("\n=== Pruebas del Sumador ===");
+
+        // Prueba 1: Suma básica PC + 4
+        a = 32'h0000_0000;  // PC inicial
+        b = 32'd4;          // Incremento
+        #10;
+        $display("Prueba 1: PC + 4");
+        $display("a = 0x%h, b = 0x%h, y = 0x%h", a, b, y);
+        
+        // Prueba 2: Suma desde dirección no cero
+        a = 32'h0000_0004;
+        b = 32'd4;
+        #10;
+        $display("\nPrueba 2: Siguiente instrucción");
+        $display("a = 0x%h, b = 0x%h, y = 0x%h", a, b, y);
+
+        // Prueba 3: Suma cerca del límite
+        a = 32'hFFFF_FFFC;
+        b = 32'd4;
+        #10;
+        $display("\nPrueba 3: Cerca del límite");
+        $display("a = 0x%h, b = 0x%h, y = 0x%h", a, b, y);
+
+        // Prueba 4: Valores aleatorios
+        a = $random;
+        b = 32'd4;
+        #10;
+        $display("\nPrueba 4: Valor aleatorio");
+        $display("a = 0x%h, b = 0x%h, y = 0x%h", a, b, y);
+
+        $display("\n=== Fin de las pruebas ===\n");
+        #10 $finish;
+    end
+
+    // Monitor de cambios
+    initial begin
+        $monitor("Time=%0t a=0x%h b=0x%h y=0x%h", 
+                 $time, a, b, y);
+    end
+
+endmodule

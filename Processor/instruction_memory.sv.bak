@@ -1,0 +1,29 @@
+module instruction_memory(
+    input  logic [31:0] A,      // Dirección de entrada (PC)
+    output logic [31:0] RD      // Instrucción leída (Read Data)
+);
+    // Memoria ROM
+    logic [31:0] rom[63:0];     // 64 palabras de 32 bits
+
+    // Inicialización de la memoria con el programa
+    initial begin
+        // Ejemplo de programa:
+        // MOV R0, #1
+        rom[0] = 32'he3a00001;
+        // MOV R1, #2
+        rom[1] = 32'he3a01002;
+        // ADD R2, R0, R1
+        rom[2] = 32'he0802001;
+        // ADD R3, R0, R2
+        rom[3] = 32'he0803002;
+        
+        // Llenar el resto con NOP (MOV R0, R0)
+        for (int i = 4; i < 64; i++)
+            rom[i] = 32'he1a00000;
+    end
+
+    // Lectura asíncrona (combinacional)
+    assign RD = rom[A[31:2]];   // Ignoramos los 2 bits menos significativos
+                                // ya que las instrucciones están alineadas a palabras
+
+endmodule

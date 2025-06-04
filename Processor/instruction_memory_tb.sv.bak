@@ -1,0 +1,52 @@
+module instruction_memory_tb();
+    // Señales de prueba
+    logic [31:0] A;      // Dirección de entrada
+    logic [31:0] RD;     // Instrucción leída
+
+    // Instancia del módulo a probar
+    instruction_memory dut(
+        .A  (A),
+        .RD (RD)
+    );
+
+    // Estímulos
+    initial begin
+        // Mostrar variables
+        $monitor("Time=%0t A=%h RD=%h", $time, A, RD);
+
+        // Prueba 1: Primera instrucción (MOV R0, #1)
+        A = 32'h0;
+        #10;
+        assert(RD == 32'he3a00001) else 
+            $error("Test 1 failed: Expected e3a00001, got %h", RD);
+
+        // Prueba 2: Segunda instrucción (MOV R1, #2)
+        A = 32'h4;
+        #10;
+        assert(RD == 32'he3a01002) else 
+            $error("Test 2 failed: Expected e3a01002, got %h", RD);
+
+        // Prueba 3: Tercera instrucción (ADD R2, R0, R1)
+        A = 32'h8;
+        #10;
+        assert(RD == 32'he0802001) else 
+            $error("Test 3 failed: Expected e0802001, got %h", RD);
+
+        // Prueba 4: Cuarta instrucción (ADD R3, R0, R2)
+        A = 32'hC;
+        #10;
+        assert(RD == 32'he0803002) else 
+            $error("Test 4 failed: Expected e0803002, got %h", RD);
+
+        // Prueba 5: NOP (después del programa)
+        A = 32'h10;
+        #10;
+        assert(RD == 32'he1a00000) else 
+            $error("Test 5 failed: Expected e1a00000, got %h", RD);
+
+        // Fin de la simulación
+        $display("Simulation finished");
+        $finish;
+    end
+
+endmodule

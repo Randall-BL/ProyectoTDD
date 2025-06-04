@@ -1,0 +1,333 @@
+# Reading pref.tcl
+# do processor_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/Nbit_Sub.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:41 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/Nbit_Sub.sv 
+# -- Compiling module Nbit_Sub
+# 
+# Top level modules:
+# 	Nbit_Sub
+# End time: 18:12:41 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/Nbit_Adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:41 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/Nbit_Adder.sv 
+# -- Compiling module Nbit_Adder
+# 
+# Top level modules:
+# 	Nbit_Adder
+# End time: 18:12:41 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/full_subtractor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:41 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/full_subtractor.sv 
+# -- Compiling module full_subtractor
+# 
+# Top level modules:
+# 	full_subtractor
+# End time: 18:12:41 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/full_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:41 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 18:12:41 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:41 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/flopr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:42 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/flopr.sv 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:42 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/mux2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:42 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/mux2.sv 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/register_file.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:42 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/register_file.sv 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:42 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/extend.sv 
+# -- Compiling module extend
+# 
+# Top level modules:
+# 	extend
+# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:42 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/condcheck.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:42 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/condcheck.sv 
+# -- Compiling module condcheck
+# 
+# Top level modules:
+# 	condcheck
+# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:42 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/arm.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:43 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/arm.sv 
+# -- Compiling module arm
+# 
+# Top level modules:
+# 	arm
+# End time: 18:12:43 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:43 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/controller.sv 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 18:12:43 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/condlogic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:43 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/condlogic.sv 
+# -- Compiling module condlogic
+# 
+# Top level modules:
+# 	condlogic
+# End time: 18:12:43 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/processor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:43 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/processor.sv 
+# -- Compiling module processor
+# 
+# Top level modules:
+# 	processor
+# End time: 18:12:43 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/shifter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:43 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/shifter.sv 
+# -- Compiling module shifter
+# 
+# Top level modules:
+# 	shifter
+# End time: 18:12:43 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/vgaController.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:43 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/vgaController.sv 
+# -- Compiling module vgaController
+# 
+# Top level modules:
+# 	vgaController
+# End time: 18:12:43 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/pll.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:43 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/pll.sv 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 18:12:43 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/vga_initializer.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:43 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/vga_initializer.sv 
+# -- Compiling module vga_initializer
+# 
+# Top level modules:
+# 	vga_initializer
+# End time: 18:12:43 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/Nbit_Mult.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:43 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/Nbit_Mult.sv 
+# -- Compiling module Nbit_Mult
+# 
+# Top level modules:
+# 	Nbit_Mult
+# End time: 18:12:44 on Jun 03,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/instruction_memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:44 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/instruction_memory.sv 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 18:12:44 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/data_memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:44 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/data_memory.sv 
+# -- Compiling module data_memory
+# 
+# Top level modules:
+# 	data_memory
+# End time: 18:12:44 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/videoGen.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:44 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/videoGen.sv 
+# -- Compiling module videoGen
+# 
+# Top level modules:
+# 	videoGen
+# End time: 18:12:44 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/controller_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:12:44 on Jun 03,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/controller_tb.sv 
+# -- Compiling module controller_tb
+# 
+# Top level modules:
+# 	controller_tb
+# End time: 18:12:44 on Jun 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  controller_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" controller_tb 
+# Start time: 18:12:44 on Jun 03,2025
+# Loading sv_std.std
+# Loading work.controller_tb
+# Loading work.controller
+# Loading work.decoder
+# Loading work.condlogic
+# Loading work.flopr
+# Loading work.condcheck
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: lobok  Hostname: DELLLAPTOP  ProcessID: 9664
+#           Attempting to use alternate WLF file "./wlfti4kayz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfti4kayz
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0 clk=0 reset=1 Instr=00000000 ALUFlags=0000 | RegSrc=00 RegWrite=0 ImmSrc=00 ALUSrc=0 ALUControl=010 MemWrite=0 MemtoReg=0 PCSrc=0
+#                   10 clk=1 reset=1 Instr=00000000 ALUFlags=0000 | RegSrc=00 RegWrite=0 ImmSrc=00 ALUSrc=0 ALUControl=010 MemWrite=0 MemtoReg=0 PCSrc=0
+#                   15 clk=1 reset=0 Instr=00000000 ALUFlags=0000 | RegSrc=00 RegWrite=0 ImmSrc=00 ALUSrc=0 ALUControl=010 MemWrite=0 MemtoReg=0 PCSrc=0
+#                   20 clk=0 reset=0 Instr=00000000 ALUFlags=0000 | RegSrc=00 RegWrite=0 ImmSrc=00 ALUSrc=0 ALUControl=010 MemWrite=0 MemtoReg=0 PCSrc=0
+#                   25 clk=0 reset=0 Instr=e3a00001 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=1 ALUControl=101 MemWrite=0 MemtoReg=0 PCSrc=0
+#                   30 clk=1 reset=0 Instr=e3a00001 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=1 ALUControl=101 MemWrite=0 MemtoReg=0 PCSrc=0
+#                   40 clk=0 reset=0 Instr=e3a00001 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=1 ALUControl=101 MemWrite=0 MemtoReg=0 PCSrc=0
+#                   45 clk=0 reset=0 Instr=e2800001 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=0
+#                   50 clk=1 reset=0 Instr=e2800001 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=0
+#                   60 clk=0 reset=0 Instr=e2800001 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=0
+#                   65 clk=0 reset=0 Instr=e58f0000 ALUFlags=0000 | RegSrc=10 RegWrite=0 ImmSrc=01 ALUSrc=1 ALUControl=000 MemWrite=1 MemtoReg=1 PCSrc=0
+#                   70 clk=1 reset=0 Instr=e58f0000 ALUFlags=0000 | RegSrc=10 RegWrite=0 ImmSrc=01 ALUSrc=1 ALUControl=000 MemWrite=1 MemtoReg=1 PCSrc=0
+#                   80 clk=0 reset=0 Instr=e58f0000 ALUFlags=0000 | RegSrc=10 RegWrite=0 ImmSrc=01 ALUSrc=1 ALUControl=000 MemWrite=1 MemtoReg=1 PCSrc=0
+#                   85 clk=0 reset=0 Instr=e59f0000 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=01 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=1 PCSrc=0
+#                   90 clk=1 reset=0 Instr=e59f0000 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=01 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=1 PCSrc=0
+#                  100 clk=0 reset=0 Instr=e59f0000 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=01 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=1 PCSrc=0
+#                  105 clk=0 reset=0 Instr=e0030091 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=100 MemWrite=0 MemtoReg=0 PCSrc=0
+#                  110 clk=1 reset=0 Instr=e0030091 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=100 MemWrite=0 MemtoReg=0 PCSrc=0
+#                  120 clk=0 reset=0 Instr=e0030091 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=100 MemWrite=0 MemtoReg=0 PCSrc=0
+#                  125 clk=0 reset=0 Instr=e0030091 ALUFlags=1010 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=100 MemWrite=0 MemtoReg=0 PCSrc=0
+#                  130 clk=1 reset=0 Instr=e0030091 ALUFlags=1010 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=100 MemWrite=0 MemtoReg=0 PCSrc=0
+#                  140 clk=0 reset=0 Instr=e0030091 ALUFlags=1010 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=100 MemWrite=0 MemtoReg=0 PCSrc=0
+#                  145 clk=0 reset=0 Instr=00000000 ALUFlags=1010 | RegSrc=00 RegWrite=0 ImmSrc=00 ALUSrc=0 ALUControl=010 MemWrite=0 MemtoReg=0 PCSrc=0
+#                  150 clk=1 reset=0 Instr=00000000 ALUFlags=1010 | RegSrc=00 RegWrite=0 ImmSrc=00 ALUSrc=0 ALUControl=010 MemWrite=0 MemtoReg=0 PCSrc=0
+#                  160 clk=0 reset=0 Instr=00000000 ALUFlags=1010 | RegSrc=00 RegWrite=0 ImmSrc=00 ALUSrc=0 ALUControl=010 MemWrite=0 MemtoReg=0 PCSrc=0
+#                  165 clk=0 reset=0 Instr=ea00000a ALUFlags=1010 | RegSrc=01 RegWrite=0 ImmSrc=10 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=1
+#                  170 clk=1 reset=0 Instr=ea00000a ALUFlags=1010 | RegSrc=01 RegWrite=0 ImmSrc=10 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=1
+#                  180 clk=0 reset=0 Instr=ea00000a ALUFlags=1010 | RegSrc=01 RegWrite=0 ImmSrc=10 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=1
+#                  190 clk=1 reset=0 Instr=ea00000a ALUFlags=1010 | RegSrc=01 RegWrite=0 ImmSrc=10 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=1
+#                  200 clk=0 reset=0 Instr=ea00000a ALUFlags=1010 | RegSrc=01 RegWrite=0 ImmSrc=10 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=1
+#                  210 clk=1 reset=0 Instr=ea00000a ALUFlags=1010 | RegSrc=01 RegWrite=0 ImmSrc=10 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=1
+# ** Note: $finish    : C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/controller_tb.sv(60)
+#    Time: 215 ns  Iteration: 0  Instance: /controller_tb
+# 1
+# Break in Module controller_tb at C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/controller_tb.sv line 60
+# End time: 18:14:03 on Jun 03,2025, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 2

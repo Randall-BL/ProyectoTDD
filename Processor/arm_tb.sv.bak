@@ -1,0 +1,65 @@
+module arm_tb();
+    logic        clk;
+    logic        reset;
+    logic [31:0] PC;
+    logic [31:0] Instr;
+    logic        MemWrite;
+    logic [31:0] ALUResult;
+    logic [31:0] WriteData;
+    logic [31:0] ReadData;
+
+    // Instancia del procesador ARM
+    arm dut(.*);
+
+    // Generación de reloj
+    always begin
+        clk = 1; #5;
+        clk = 0; #5;
+    end
+
+    // Memoria de instrucciones simulada
+    always_comb
+        case(PC)
+            32'h00: Instr = 32'hE0821003;  // ADD R1, R2, R3
+            32'h04: Instr = 32'hE2112064;  // ADDS R1, R2, #100
+            32'h08: Instr = 32'hE5921004;  // LDR R1, [R2, #4]
+            32'h0C: Instr = 32'hE5821004;  // STR R1, [R2, #4]
+            32'h10: Instr = 32'hEA000001;  // B skip
+            32'h14: Instr = 32'hE0421003;  // SUB R1, R2, R3
+            32'h18: Instr = 32'hE0021003;  // AND R1, R2, R3
+            default: Instr = 32'h0;
+        endcase
+
+    // Memoria de datos simulada
+    always_comb
+        if (MemWrite) begin
+            // Simular escritura en memoria
+            $display("Escribiendo en memoria: dirección=%h, dato=%h", 
+                     ALUResult, WriteData);
+        end else begin
+            // Simular lectura de memoria
+            ReadData = 32'h12345678;
+        end
+
+    // Test
+    initial begin
+        // Reset inicial
+        reset = 1;
+        #10;
+        reset = 0;
+
+        // Ejecutar programa
+        repeat(10) @(posedge clk);
+
+        // Mostrar resultados finales
+        $display("\nPrueba completada");
+        $finish;
+    end
+
+    // Monitor
+    initial begin
+        $monitor("Time=%0t PC=%h Instr=%h ALUResult=%h",
+                 $time, PC, Instr, ALUResult);
+    end
+
+endmodule

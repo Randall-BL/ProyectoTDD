@@ -1,0 +1,72 @@
+module datapath(
+    input  logic        clk, reset,
+    // Señales de control (desde controller)
+    input  logic [1:0]  RegSrc,
+    input  logic        RegWrite,
+    input  logic [1:0]  ImmSrc,
+    input  logic        ALUSrc,
+    input  logic [1:0]  ALUControl,
+    input  logic        MemWrite,
+    input  logic        MemtoReg,
+    input  logic        PCSrc,
+    // Salidas hacia controller
+    output logic [31:0] Instr,
+    output logic [3:0]  ALUFlags
+);
+    // Señales internas
+    logic [31:0] PCNext, PC;
+    logic [31:0] ExtImm, SrcA, SrcB, Result;
+    logic [31:0] RD1, RD2, ALUResult, ReadData;
+    
+    // Fetch Stage
+    fetch_stage fetch(
+        .clk(clk),
+        .reset(reset),
+        .enable(1'b1),
+        .PC_branch(Result),
+        .PCSrc(PCSrc),
+        .PC(PC),
+        .PC_plus4(PCNext),
+        .Instr(Instr)
+    );
+
+    // Decode Stage
+    decode_stage decode(
+        .clk(clk),
+        .reset(reset),
+        .Instr(Instr),
+        .WriteData(Result),
+        .RegWrite(RegWrite),
+        .RegSrc(RegSrc),
+        .ImmSrc(ImmSrc),
+        .RD1(RD1),
+        .RD2(RD2),
+        .ExtImm(ExtImm)
+    );
+
+    // ALU
+    Alu #(32) alu(
+        .A(RD1),
+        .B(ALUSrc ? ExtImm : RD2),
+        .ALU_Sel(ALUControl),
+        .ALU_Result(ALUResult),
+        .ALU_Flags(ALUFlags)
+    );
+
+    // Memory
+    data_memory dmem(
+        .clock(clk),
+        .mem_write(MemWrite),
+        .address(ALUResult),
+        .write_data(RD2),
+        .read_data(ReadData)
+    );
+
+    // Writeback
+    writeback wb(
+        .ALUResult(ALUResult),
+        .ReadData(ReadData),
+        .MemtoReg(MemtoReg),
+        .Result(Result)
+    );
+endmodule

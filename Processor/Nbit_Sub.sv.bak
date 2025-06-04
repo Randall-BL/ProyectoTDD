@@ -1,0 +1,45 @@
+module Nbit_Sub #(parameter N = 32)(
+    input  logic [N-1:0] a,         // Minuendo (32 bits)
+    input  logic [N-1:0] b,         // Sustraendo (32 bits)
+    output logic [N-1:0] result,    // Resultado (32 bits)
+    output logic cry_flag,          // Borrow out
+    output logic zr_flag,           // Zero flag
+    output logic of_flag,           // Overflow flag
+    output logic neg_flag           // Negative flag
+);
+
+    // Vector de préstamos entre etapas
+    wire [N-1:0] carries;
+    
+    // Generación de restadores completos
+    genvar i;
+    generate 
+        for(i = 0; i < N; i = i + 1) begin: generate_N_bit_Sub
+            if(i == 0) 
+                // Primer restador (no tiene préstamo de entrada)
+                full_subtractor f(
+                    .a(a[0]),
+                    .b(b[0]),
+                    .c_in(1'b0),
+                    .result(result[0]),
+                    .c_out(carries[0])
+                );
+            else
+                // Restadores subsiguientes
+                full_subtractor f(
+                    .a(a[i]),
+                    .b(b[i]),
+                    .c_in(carries[i-1]),
+                    .result(result[i]),
+                    .c_out(carries[i])
+                );
+        end
+    endgenerate
+
+    // Generación de flags
+    assign zr_flag = (result == 0);                                   // Zero flag
+    assign neg_flag = result[N-1];                                    // Negative flag
+    assign cry_flag = carries[N-1];                                   // Borrow out
+    assign of_flag = (a[N-1] == b[N-1] && a[N-1] != result[N-1]);    // Overflow flag
+
+endmodule

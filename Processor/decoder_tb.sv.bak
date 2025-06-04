@@ -1,0 +1,103 @@
+`timescale 1ns/1ps
+
+module decoder_tb();
+    // Señales de prueba
+    logic [1:0]  Op;
+    logic [5:0]  Funct;
+    logic [3:0]  Rd;
+    logic [1:0]  FlagW;
+    logic        PCS;
+    logic        RegW;
+    logic        MemW;
+    logic        MemtoReg;
+    logic [1:0]  ImmSrc;
+    logic [1:0]  ALUSrc;
+    logic [1:0]  ALUControl;
+
+    // Instancia del decoder
+    decoder dut(
+        .Op(Op),
+        .Funct(Funct),
+        .Rd(Rd),
+        .FlagW(FlagW),
+        .PCS(PCS),
+        .RegW(RegW),
+        .MemW(MemW),
+        .MemtoReg(MemtoReg),
+        .ImmSrc(ImmSrc),
+        .ALUSrc(ALUSrc),
+        .ALUControl(ALUControl)
+    );
+
+    // Función para mostrar señales de control
+    function void display_controls();
+        $display("Control Signals:");
+        $display("RegW=%b, MemW=%b, MemtoReg=%b, PCS=%b", RegW, MemW, MemtoReg, PCS);
+        $display("ImmSrc=%b, ALUSrc=%b, ALUControl=%b", ImmSrc, ALUSrc, ALUControl);
+        $display("FlagW=%b", FlagW);
+    endfunction
+
+    // Estímulos y verificación
+    initial begin
+        $display("\n=== Pruebas del Decodificador ===\n");
+
+        // Prueba 1: ADD (Data-processing)
+        $display("Prueba 1: ADD R1, R2, R3");
+        Op = 2'b00;
+        Funct = 6'b000100;  // ADD sin actualizar flags
+        Rd = 4'b0001;
+        #10;
+        display_controls();
+
+        // Prueba 2: ADDS (Data-processing with flags)
+        $display("\nPrueba 2: ADDS R1, R2, R3");
+        Op = 2'b00;
+        Funct = 6'b000101;  // ADD actualizando flags
+        Rd = 4'b0001;
+        #10;
+        display_controls();
+
+        // Prueba 3: LDR (Load)
+        $display("\nPrueba 3: LDR R1, [R2, #4]");
+        Op = 2'b01;
+        Funct = 6'b000001;  // Load
+        Rd = 4'b0001;
+        #10;
+        display_controls();
+
+        // Prueba 4: STR (Store)
+        $display("\nPrueba 4: STR R1, [R2, #4]");
+        Op = 2'b01;
+        Funct = 6'b000000;  // Store
+        Rd = 4'b0001;
+        #10;
+        display_controls();
+
+        // Prueba 5: B (Branch)
+        $display("\nPrueba 5: B label");
+        Op = 2'b10;
+        Funct = 6'b000000;  // Branch
+        Rd = 4'b0000;
+        #10;
+        display_controls();
+
+        // Prueba 6: SUB (Data-processing)
+        $display("\nPrueba 6: SUB R1, R2, R3");
+        Op = 2'b00;
+        Funct = 6'b000010;  // SUB sin flags
+        Rd = 4'b0001;
+        #10;
+        display_controls();
+
+        // Prueba 7: AND (Data-processing)
+        $display("\nPrueba 7: AND R1, R2, R3");
+        Op = 2'b00;
+        Funct = 6'b000000;  // AND
+        Rd = 4'b0001;
+        #10;
+        display_controls();
+
+        // Prueba 8: ORR (Data-processing)
+        $display("\nPrueba 8: ORR R1, R2, R3");
+        Op = 2'b00;
+        Funct = 6'b001100;  // 

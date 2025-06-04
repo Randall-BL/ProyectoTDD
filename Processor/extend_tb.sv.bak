@@ -1,0 +1,80 @@
+`timescale 1ns/1ps
+
+module extend_tb();
+    // Señales de prueba
+    logic [23:0] Instr;
+    logic [1:0]  ImmSrc;
+    logic [31:0] ExtImm;
+
+    // Instancia del módulo
+    extend dut(
+        .Instr(Instr),
+        .ImmSrc(ImmSrc),
+        .ExtImm(ExtImm)
+    );
+
+    // Estímulos y verificación
+    initial begin
+        $display("\n=== Pruebas del Extensor de Signo ===");
+
+        // Prueba 1: 8-bit immediate (Data-processing)
+        $display("\nPrueba 1: 8-bit immediate (Data-processing)");
+        ImmSrc = 2'b00;
+        
+        // Caso positivo
+        Instr = 24'h000055;  // 8-bit = 0x55
+        #10;
+        $display("Instr=0x%h, ImmSrc=%b", Instr, ImmSrc);
+        $display("ExtImm=0x%h (esperado 0x00000055)", ExtImm);
+        
+        // Caso máximo
+        Instr = 24'h0000FF;  // 8-bit = 0xFF
+        #10;
+        $display("Instr=0x%h, ImmSrc=%b", Instr, ImmSrc);
+        $display("ExtImm=0x%h (esperado 0x000000FF)", ExtImm);
+
+        // Prueba 2: 12-bit immediate (Memory)
+        $display("\nPrueba 2: 12-bit immediate (Memory)");
+        ImmSrc = 2'b01;
+        
+        // Caso positivo
+        Instr = 24'h000FFF;  // 12-bit = 0xFFF
+        #10;
+        $display("Instr=0x%h, ImmSrc=%b", Instr, ImmSrc);
+        $display("ExtImm=0x%h (esperado 0x00000FFF)", ExtImm);
+
+        // Prueba 3: 24-bit immediate (Branch)
+        $display("\nPrueba 3: 24-bit immediate (Branch)");
+        ImmSrc = 2'b10;
+        
+        // Caso positivo
+        Instr = 24'h000100;  // Salto positivo
+        #10;
+        $display("Instr=0x%h, ImmSrc=%b", Instr, ImmSrc);
+        $display("ExtImm=0x%h (esperado 0x00000400)", ExtImm);
+        
+        // Caso negativo (extensión de signo)
+        Instr = 24'hFFFFFF;  // Salto negativo
+        #10;
+        $display("Instr=0x%h, ImmSrc=%b", Instr, ImmSrc);
+        $display("ExtImm=0x%h (esperado 0xFFFFFFFC)", ExtImm);
+
+        // Prueba 4: Caso inválido
+        $display("\nPrueba 4: Caso inválido");
+        ImmSrc = 2'b11;
+        Instr = 24'h000000;
+        #10;
+        $display("Instr=0x%h, ImmSrc=%b", Instr, ImmSrc);
+        $display("ExtImm=0x%h (esperado x's)", ExtImm);
+
+        $display("\n=== Fin de las pruebas ===\n");
+        #10 $finish;
+    end
+
+    // Monitor de cambios
+    initial begin
+        $monitor("Time=%0t Instr=0x%h ImmSrc=%b ExtImm=0x%h",
+                 $time, Instr, ImmSrc, ExtImm);
+    end
+
+endmodule

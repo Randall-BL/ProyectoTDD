@@ -1,0 +1,12 @@
+WIDTH=32;
+DEPTH=64;
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+    00 : e3a00001;  -- MOV R0, #1
+    01 : e3a01002;  -- MOV R1, #2
+    02 : e0802001;  -- ADD R2, R0, R1
+    03 : e0803002;  -- ADD R3, R0, R2
+    [04..3F] : e1a00000;  -- NOP para el resto
+END;

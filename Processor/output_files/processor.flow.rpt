@@ -1,0 +1,193 @@
+Flow report for processor
+Tue Jun 03 18:12:34 2025
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Flow Summary                                                              ;
++-----------------------------+---------------------------------------------+
+; Flow Status                 ; Successful - Tue Jun 03 18:12:34 2025       ;
+; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name               ; processor                                   ;
+; Top-level Entity Name       ; processor                                   ;
+; Family                      ; Cyclone V                                   ;
+; Device                      ; 5CSXFC6D6F31C6                              ;
+; Timing Models               ; Final                                       ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 06/03/2025 18:12:30 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; processor           ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                ;
++--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
++--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 255757340319184.174899595039652        ; --            ; --          ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; instruction_memory_tb             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; Alu_tb                            ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; register_file_tb                  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; arm_tb                            ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; adder_tb                          ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; data_memory_tb                    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; datapath_tb                       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; decoder_tb                        ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; extend_tb                         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; shifter_tb                        ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; condlogic_tb                      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; mux2_tb                           ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; mux3_tb                           ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; condcheck_tb                      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; controller_tb                     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; flopr_tb                          ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; processor_tb                      ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; controller_tb                          ; --            ; --          ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; instruction_memory_tb.sv               ; --            ; --          ; instruction_memory_tb             ;
+; EDA_TEST_BENCH_FILE                  ; register_file_tb.sv                    ; --            ; --          ; register_file_tb                  ;
+; EDA_TEST_BENCH_FILE                  ; arm_tb.sv                              ; --            ; --          ; arm_tb                            ;
+; EDA_TEST_BENCH_FILE                  ; adder_tb.sv                            ; --            ; --          ; adder_tb                          ;
+; EDA_TEST_BENCH_FILE                  ; data_memory_tb.sv                      ; --            ; --          ; data_memory_tb                    ;
+; EDA_TEST_BENCH_FILE                  ; datapath_tb.sv                         ; --            ; --          ; datapath_tb                       ;
+; EDA_TEST_BENCH_FILE                  ; decoder_tb.sv                          ; --            ; --          ; decoder_tb                        ;
+; EDA_TEST_BENCH_FILE                  ; extend_tb.sv                           ; --            ; --          ; extend_tb                         ;
+; EDA_TEST_BENCH_FILE                  ; shifter_tb.sv                          ; --            ; --          ; shifter_tb                        ;
+; EDA_TEST_BENCH_FILE                  ; condlogic_tb.sv                        ; --            ; --          ; condlogic_tb                      ;
+; EDA_TEST_BENCH_FILE                  ; mux2_tb.sv                             ; --            ; --          ; mux2_tb                           ;
+; EDA_TEST_BENCH_FILE                  ; mux3_tb.sv                             ; --            ; --          ; mux3_tb                           ;
+; EDA_TEST_BENCH_FILE                  ; condcheck_tb.sv                        ; --            ; --          ; condcheck_tb                      ;
+; EDA_TEST_BENCH_FILE                  ; controller_tb.sv                       ; --            ; --          ; controller_tb                     ;
+; EDA_TEST_BENCH_FILE                  ; flopr_tb.sv                            ; --            ; --          ; flopr_tb                          ;
+; EDA_TEST_BENCH_FILE                  ; alu_tb.sv                              ; --            ; --          ; alu_tb                            ;
+; EDA_TEST_BENCH_FILE                  ; processor_tb.sv                        ; --            ; --          ; processor_tb                      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; instruction_memory_tb                  ; --            ; --          ; instruction_memory_tb             ;
+; EDA_TEST_BENCH_MODULE_NAME           ; register_file_tb                       ; --            ; --          ; register_file_tb                  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; arm_tb                                 ; --            ; --          ; arm_tb                            ;
+; EDA_TEST_BENCH_MODULE_NAME           ; adder_tb                               ; --            ; --          ; adder_tb                          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; data_memory_tb                         ; --            ; --          ; data_memory_tb                    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; datapath_tb                            ; --            ; --          ; datapath_tb                       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; decoder_tb                             ; --            ; --          ; decoder_tb                        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; extend_tb                              ; --            ; --          ; extend_tb                         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; shifter_tb                             ; --            ; --          ; shifter_tb                        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; condlogic_tb                           ; --            ; --          ; condlogic_tb                      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; mux2_tb                                ; --            ; --          ; mux2_tb                           ;
+; EDA_TEST_BENCH_MODULE_NAME           ; mux3_tb                                ; --            ; --          ; mux3_tb                           ;
+; EDA_TEST_BENCH_MODULE_NAME           ; condcheck_tb                           ; --            ; --          ; condcheck_tb                      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; controller_tb                          ; --            ; --          ; controller_tb                     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; flopr_tb                               ; --            ; --          ; flopr_tb                          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; alu_tb                                 ; --            ; --          ; alu_tb                            ;
+; EDA_TEST_BENCH_MODULE_NAME           ; processor_tb                           ; --            ; --          ; processor_tb                      ;
+; EDA_TEST_BENCH_NAME                  ; extend_tb                              ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; register_file_tb                       ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; data_memory_tb                         ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; processor_tb                           ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; instruction_memory_tb                  ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; flopr_tb                               ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; adder_tb                               ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; mux2_tb                                ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; alu_tb                                 ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; condcheck_tb                           ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; decoder_tb                             ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; condlogic_tb                           ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; mux3_tb                                ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; shifter_tb                             ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; datapath_tb                            ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; arm_tb                                 ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; controller_tb                          ; --            ; --          ; eda_simulation                    ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                                ;
+; MISC_FILE                            ; rom_inst.v                             ; --            ; --          ; --                                ;
+; MISC_FILE                            ; rom_bb.v                               ; --            ; --          ; --                                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                                ;
++--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                          ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Elaboration ; 00:00:04     ; 1.0                     ; 4802 MB             ; 00:00:11                           ;
+; Total                  ; 00:00:04     ; --                      ; --                  ; 00:00:11                           ;
++------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                      ;
++------------------------+------------------+------------+------------+----------------+
+; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++------------------------+------------------+------------+------------+----------------+
+; Analysis & Elaboration ; YitanPC          ; Windows 10 ; 10.0       ; x86_64         ;
++------------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off processor -c processor --analysis_and_elaboration
+
+
+
