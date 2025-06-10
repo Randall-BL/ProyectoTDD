@@ -1,0 +1,29 @@
+module ps2_keyboard_controller (
+	input logic clk,
+	input logic reset,
+	input logic ps2_data,
+	input logic ps2_clk,
+	input logic rd_key_code,
+	output logic [7:0],
+	output logic kb_buf_empty,
+	output logic kb_buf_full
+);
+
+
+// Senales internas
+logic [7:0] scan_data;
+logic scan_done_tick;
+logic rx_en;
+
+
+// Instanciar receptor PS2
+ps2_rx ps2_reciever(
+	.clk(clk),
+	.reset(reset),
+	.ps2_data(ps2_data),
+	.ps2_clk(ps2_clk),
+	.rx_en(rx_en),
+	.rx_done_tick(scan_done_tick),
+	.dout(scan_data)
+);
+
