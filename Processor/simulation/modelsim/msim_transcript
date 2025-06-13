@@ -10,324 +10,744 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/Nbit_Sub.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/Nbit_Sub.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:41 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/Nbit_Sub.sv 
+# Start time: 06:48:09 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/Nbit_Sub.sv 
 # -- Compiling module Nbit_Sub
 # 
 # Top level modules:
 # 	Nbit_Sub
-# End time: 18:12:41 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:10 on Jun 13,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/Nbit_Adder.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/Nbit_Adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:41 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/Nbit_Adder.sv 
+# Start time: 06:48:10 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/Nbit_Adder.sv 
 # -- Compiling module Nbit_Adder
 # 
 # Top level modules:
 # 	Nbit_Adder
-# End time: 18:12:41 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:10 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/full_subtractor.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/full_subtractor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:41 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/full_subtractor.sv 
+# Start time: 06:48:10 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/full_subtractor.sv 
 # -- Compiling module full_subtractor
 # 
 # Top level modules:
 # 	full_subtractor
-# End time: 18:12:41 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:10 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/full_adder.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/full_adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:41 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/full_adder.sv 
+# Start time: 06:48:10 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/full_adder.sv 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 18:12:41 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:10 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/datapath.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/datapath.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:41 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/datapath.sv 
+# Start time: 06:48:10 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/datapath.sv 
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:01
+# End time: 06:48:10 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/flopr.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/flopr.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:42 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/flopr.sv 
+# Start time: 06:48:10 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/flopr.sv 
 # -- Compiling module flopr
 # 
 # Top level modules:
 # 	flopr
-# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:10 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/adder.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:42 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/adder.sv 
+# Start time: 06:48:10 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/adder.sv 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:10 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/mux2.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/mux2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:42 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/mux2.sv 
+# Start time: 06:48:10 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/mux2.sv 
 # -- Compiling module mux2
 # 
 # Top level modules:
 # 	mux2
-# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:10 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/register_file.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/register_file.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:42 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/register_file.sv 
+# Start time: 06:48:10 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/register_file.sv 
 # -- Compiling module register_file
 # 
 # Top level modules:
 # 	register_file
-# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:10 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/extend.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/extend.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:42 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/extend.sv 
+# Start time: 06:48:10 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/extend.sv 
 # -- Compiling module extend
 # 
 # Top level modules:
 # 	extend
-# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:10 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/alu.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:42 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/alu.sv 
+# Start time: 06:48:11 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:11 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/condcheck.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/condcheck.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:42 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/condcheck.sv 
+# Start time: 06:48:11 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/condcheck.sv 
 # -- Compiling module condcheck
 # 
 # Top level modules:
 # 	condcheck
-# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:11 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/decoder.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:42 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/decoder.sv 
+# Start time: 06:48:11 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/decoder.sv 
 # -- Compiling module decoder
 # 
 # Top level modules:
 # 	decoder
-# End time: 18:12:42 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:11 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/arm.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/arm.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:43 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/arm.sv 
+# Start time: 06:48:11 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/arm.sv 
 # -- Compiling module arm
 # 
 # Top level modules:
 # 	arm
-# End time: 18:12:43 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:11 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/controller.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:43 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/controller.sv 
+# Start time: 06:48:11 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/controller.sv 
 # -- Compiling module controller
 # 
 # Top level modules:
 # 	controller
-# End time: 18:12:43 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:11 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/condlogic.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/condlogic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:43 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/condlogic.sv 
+# Start time: 06:48:11 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/condlogic.sv 
 # -- Compiling module condlogic
 # 
 # Top level modules:
 # 	condlogic
-# End time: 18:12:43 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:11 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/processor.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/processor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:43 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/processor.sv 
+# Start time: 06:48:11 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/processor.sv 
 # -- Compiling module processor
 # 
 # Top level modules:
 # 	processor
-# End time: 18:12:43 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:11 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/shifter.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/shifter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:43 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/shifter.sv 
+# Start time: 06:48:11 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/shifter.sv 
 # -- Compiling module shifter
 # 
 # Top level modules:
 # 	shifter
-# End time: 18:12:43 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:11 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/vgaController.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/vgaController.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:43 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/vgaController.sv 
+# Start time: 06:48:11 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/vgaController.sv 
 # -- Compiling module vgaController
 # 
 # Top level modules:
 # 	vgaController
-# End time: 18:12:43 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:11 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/pll.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/pll.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:43 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/pll.sv 
+# Start time: 06:48:11 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/pll.sv 
 # -- Compiling module pll
 # 
 # Top level modules:
 # 	pll
-# End time: 18:12:43 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:11 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/vga_initializer.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/vga_initializer.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:43 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/vga_initializer.sv 
+# Start time: 06:48:11 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/vga_initializer.sv 
 # -- Compiling module vga_initializer
 # 
 # Top level modules:
 # 	vga_initializer
-# End time: 18:12:43 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:11 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/Nbit_Mult.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/Nbit_Mult.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:43 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/Nbit_Mult.sv 
+# Start time: 06:48:12 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/Nbit_Mult.sv 
 # -- Compiling module Nbit_Mult
 # 
 # Top level modules:
 # 	Nbit_Mult
-# End time: 18:12:44 on Jun 03,2025, Elapsed time: 0:00:01
+# End time: 06:48:12 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/instruction_memory.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/instruction_memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:44 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/instruction_memory.sv 
+# Start time: 06:48:12 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/instruction_memory.sv 
 # -- Compiling module instruction_memory
 # 
 # Top level modules:
 # 	instruction_memory
-# End time: 18:12:44 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:12 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/data_memory.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:44 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/data_memory.sv 
+# Start time: 06:48:12 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv 
 # -- Compiling module data_memory
 # 
 # Top level modules:
 # 	data_memory
-# End time: 18:12:44 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:12 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/videoGen.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/videoGen.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:44 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/videoGen.sv 
+# Start time: 06:48:12 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/videoGen.sv 
 # -- Compiling module videoGen
 # 
 # Top level modules:
 # 	videoGen
-# End time: 18:12:44 on Jun 03,2025, Elapsed time: 0:00:00
+# End time: 06:48:12 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor {C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/controller_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto\ TDD/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/processor_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:12:44 on Jun 03,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor" C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/controller_tb.sv 
-# -- Compiling module controller_tb
+# Start time: 06:48:12 on Jun 13,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/processor_tb.sv 
+# -- Compiling module processor_tb
 # 
 # Top level modules:
-# 	controller_tb
-# End time: 18:12:44 on Jun 03,2025, Elapsed time: 0:00:00
+# 	processor_tb
+# End time: 06:48:12 on Jun 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  controller_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" controller_tb 
-# Start time: 18:12:44 on Jun 03,2025
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  processor_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" processor_tb 
+# Start time: 06:48:12 on Jun 13,2025
 # Loading sv_std.std
-# Loading work.controller_tb
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.arm
 # Loading work.controller
 # Loading work.decoder
 # Loading work.condlogic
 # Loading work.flopr
 # Loading work.condcheck
+# Loading work.datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.register_file
+# Loading work.extend
+# Loading work.shifter
+# Loading work.alu
+# Loading work.Nbit_Sub
+# Loading work.Nbit_Adder
+# Loading work.Nbit_Mult
+# Loading work.instruction_memory
+# Loading work.data_memory
+# Loading work.vga_initializer
+# Loading work.pll
+# Loading work.vgaController
+# Loading work.videoGen
+# Loading work.full_subtractor
+# Loading work.full_adder
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dp'.  Expected 23, found 22.
+#    Time: 0 ps  Iteration: 0  Instance: /processor_tb/dut/arm_inst/dp File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/arm.sv Line: 46
+# ** Warning: (vsim-3722) C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/arm.sv(46): [TFMPC] - Missing connection for port 'MemWrite'.
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: lobok  Hostname: DELLLAPTOP  ProcessID: 9664
-#           Attempting to use alternate WLF file "./wlfti4kayz".
+#           Attempting to use alternate WLF file "./wlftd9g1rh".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfti4kayz
+#           Using alternate file: ./wlftd9g1rh
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-#                    0 clk=0 reset=1 Instr=00000000 ALUFlags=0000 | RegSrc=00 RegWrite=0 ImmSrc=00 ALUSrc=0 ALUControl=010 MemWrite=0 MemtoReg=0 PCSrc=0
-#                   10 clk=1 reset=1 Instr=00000000 ALUFlags=0000 | RegSrc=00 RegWrite=0 ImmSrc=00 ALUSrc=0 ALUControl=010 MemWrite=0 MemtoReg=0 PCSrc=0
-#                   15 clk=1 reset=0 Instr=00000000 ALUFlags=0000 | RegSrc=00 RegWrite=0 ImmSrc=00 ALUSrc=0 ALUControl=010 MemWrite=0 MemtoReg=0 PCSrc=0
-#                   20 clk=0 reset=0 Instr=00000000 ALUFlags=0000 | RegSrc=00 RegWrite=0 ImmSrc=00 ALUSrc=0 ALUControl=010 MemWrite=0 MemtoReg=0 PCSrc=0
-#                   25 clk=0 reset=0 Instr=e3a00001 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=1 ALUControl=101 MemWrite=0 MemtoReg=0 PCSrc=0
-#                   30 clk=1 reset=0 Instr=e3a00001 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=1 ALUControl=101 MemWrite=0 MemtoReg=0 PCSrc=0
-#                   40 clk=0 reset=0 Instr=e3a00001 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=1 ALUControl=101 MemWrite=0 MemtoReg=0 PCSrc=0
-#                   45 clk=0 reset=0 Instr=e2800001 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=0
-#                   50 clk=1 reset=0 Instr=e2800001 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=0
-#                   60 clk=0 reset=0 Instr=e2800001 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=0
-#                   65 clk=0 reset=0 Instr=e58f0000 ALUFlags=0000 | RegSrc=10 RegWrite=0 ImmSrc=01 ALUSrc=1 ALUControl=000 MemWrite=1 MemtoReg=1 PCSrc=0
-#                   70 clk=1 reset=0 Instr=e58f0000 ALUFlags=0000 | RegSrc=10 RegWrite=0 ImmSrc=01 ALUSrc=1 ALUControl=000 MemWrite=1 MemtoReg=1 PCSrc=0
-#                   80 clk=0 reset=0 Instr=e58f0000 ALUFlags=0000 | RegSrc=10 RegWrite=0 ImmSrc=01 ALUSrc=1 ALUControl=000 MemWrite=1 MemtoReg=1 PCSrc=0
-#                   85 clk=0 reset=0 Instr=e59f0000 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=01 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=1 PCSrc=0
-#                   90 clk=1 reset=0 Instr=e59f0000 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=01 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=1 PCSrc=0
-#                  100 clk=0 reset=0 Instr=e59f0000 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=01 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=1 PCSrc=0
-#                  105 clk=0 reset=0 Instr=e0030091 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=100 MemWrite=0 MemtoReg=0 PCSrc=0
-#                  110 clk=1 reset=0 Instr=e0030091 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=100 MemWrite=0 MemtoReg=0 PCSrc=0
-#                  120 clk=0 reset=0 Instr=e0030091 ALUFlags=0000 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=100 MemWrite=0 MemtoReg=0 PCSrc=0
-#                  125 clk=0 reset=0 Instr=e0030091 ALUFlags=1010 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=100 MemWrite=0 MemtoReg=0 PCSrc=0
-#                  130 clk=1 reset=0 Instr=e0030091 ALUFlags=1010 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=100 MemWrite=0 MemtoReg=0 PCSrc=0
-#                  140 clk=0 reset=0 Instr=e0030091 ALUFlags=1010 | RegSrc=00 RegWrite=1 ImmSrc=00 ALUSrc=0 ALUControl=100 MemWrite=0 MemtoReg=0 PCSrc=0
-#                  145 clk=0 reset=0 Instr=00000000 ALUFlags=1010 | RegSrc=00 RegWrite=0 ImmSrc=00 ALUSrc=0 ALUControl=010 MemWrite=0 MemtoReg=0 PCSrc=0
-#                  150 clk=1 reset=0 Instr=00000000 ALUFlags=1010 | RegSrc=00 RegWrite=0 ImmSrc=00 ALUSrc=0 ALUControl=010 MemWrite=0 MemtoReg=0 PCSrc=0
-#                  160 clk=0 reset=0 Instr=00000000 ALUFlags=1010 | RegSrc=00 RegWrite=0 ImmSrc=00 ALUSrc=0 ALUControl=010 MemWrite=0 MemtoReg=0 PCSrc=0
-#                  165 clk=0 reset=0 Instr=ea00000a ALUFlags=1010 | RegSrc=01 RegWrite=0 ImmSrc=10 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=1
-#                  170 clk=1 reset=0 Instr=ea00000a ALUFlags=1010 | RegSrc=01 RegWrite=0 ImmSrc=10 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=1
-#                  180 clk=0 reset=0 Instr=ea00000a ALUFlags=1010 | RegSrc=01 RegWrite=0 ImmSrc=10 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=1
-#                  190 clk=1 reset=0 Instr=ea00000a ALUFlags=1010 | RegSrc=01 RegWrite=0 ImmSrc=10 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=1
-#                  200 clk=0 reset=0 Instr=ea00000a ALUFlags=1010 | RegSrc=01 RegWrite=0 ImmSrc=10 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=1
-#                  210 clk=1 reset=0 Instr=ea00000a ALUFlags=1010 | RegSrc=01 RegWrite=0 ImmSrc=10 ALUSrc=1 ALUControl=000 MemWrite=0 MemtoReg=0 PCSrc=1
-# ** Note: $finish    : C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/controller_tb.sv(60)
-#    Time: 215 ns  Iteration: 0  Instance: /controller_tb
+# --- Depuración de Carga de IMEM ---
+# ROM[0x000] (esperado LDR R7) = e3a07000
+# ROM[0x001] (esperado MOV R0) = e5970000
+# ROM[0x002] (esperado MOV R1) = e5971004
+# --- Fin Depuración IMEM ---
+# 
+# --- Depuración de Carga de Memoria de Datos (RAM) ---
+# Memoria de datos cargada (RAM[0:1023]):
+#   RAM[0x000] (Word Index 0) = 0000000a
+#   RAM[0x001] (Word Index 1) = 00000005
+#   RAM[0x002] (Word Index 2) = 00000001
+#   RAM[0x003] (Word Index 3) = 00000000
+#   RAM[0x004] (Word Index 4) = 00000000
+#   RAM[0x005] (Word Index 5) = 00000000
+#   RAM[0x006] (Word Index 6) = 00000000
+#   RAM[0x007] (Word Index 7) = 00000000
+#   RAM[0x008] (Word Index 8) = 00000000
+#   RAM[0x009] (Word Index 9) = 00000000
+#   Confirmando datos clave para la calculadora (basado en 'data_test_suma.dat'):
+#     RAM[0x000] (Operando 1, Word Index 0) = 0000000a
+#     RAM[0x001] (Operando 2, Word Index 1) = 00000005
+#     RAM[0x002] (Operador, Word Index 2) = 00000001
+#     RAM[0x003] (Espacio para Resultado, Word Index 3) = 00000000
+# --- Fin Depuración de Carga de Memoria de Datos ---
+# Time=0 ns | PC=00000000 | Instr=e3a07000 | ALURes=00000000 | WrtDat=00000000 | MemWrt=0 | RdDat=xxxxxxxx | R0=00000000 R1=00000000 R2=00000000 R3=00000000 R7=00000000
+# 
+# === Iniciando prueba de la calculadora ARM ===
+# 
+# --- Caso de prueba 1: SUMA (10 + 5) ---
+# Time=10000 ns | PC=00000000 | Instr=e3a07000 | ALURes=00000000 | WrtDat=00000000 | MemWrt=0 | RdDat=0000000a | R0=00000000 R1=00000000 R2=00000000 R3=00000000 R7=00000000
+# Time=30000 ns | PC=00000004 | Instr=e5970000 | ALURes=00000000 | WrtDat=00000000 | MemWrt=0 | RdDat=0000000a | R0=00000000 R1=00000000 R2=00000000 R3=00000000 R7=00000000
+# Time=40000 ns | PC=00000008 | Instr=e5971004 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=0000000a | R0=0000000a R1=00000000 R2=00000000 R3=00000000 R7=00000000
+# Time=50000 ns | PC=0000000c | Instr=e5972008 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000005 | R0=0000000a R1=0000000a R2=00000000 R3=00000000 R7=00000000
+# Time=60000 ns | PC=00000010 | Instr=e3520001 | ALURes=00000006 | WrtDat=0000000a | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=70000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000005 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=80000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000007 | WrtDat=00000005 | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=90000 ns | PC=0000001c | Instr=0a000003 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000005 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=100000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=110000 ns | PC=00000024 | Instr=0a000006 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=120000 ns | PC=00000028 | Instr=e3520004 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=130000 ns | PC=0000002c | Instr=0a000009 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=140000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=150000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=160000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000007 | WrtDat=00000005 | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=170000 ns | PC=0000001c | Instr=0a000003 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000005 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=180000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=190000 ns | PC=00000024 | Instr=0a000006 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=200000 ns | PC=00000028 | Instr=e3520004 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=210000 ns | PC=0000002c | Instr=0a000009 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=220000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=230000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=240000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000007 | WrtDat=00000005 | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=250000 ns | PC=0000001c | Instr=0a000003 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000005 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=260000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=270000 ns | PC=00000024 | Instr=0a000006 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=280000 ns | PC=00000028 | Instr=e3520004 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=290000 ns | PC=0000002c | Instr=0a000009 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=300000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=310000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=320000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000007 | WrtDat=00000005 | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=330000 ns | PC=0000001c | Instr=0a000003 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000005 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=340000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=350000 ns | PC=00000024 | Instr=0a000006 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=360000 ns | PC=00000028 | Instr=e3520004 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=370000 ns | PC=0000002c | Instr=0a000009 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=380000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=390000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=400000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000007 | WrtDat=00000005 | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=410000 ns | PC=0000001c | Instr=0a000003 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000005 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=420000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=430000 ns | PC=00000024 | Instr=0a000006 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=440000 ns | PC=00000028 | Instr=e3520004 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=450000 ns | PC=0000002c | Instr=0a000009 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=460000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=470000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=480000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000007 | WrtDat=00000005 | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=490000 ns | PC=0000001c | Instr=0a000003 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000005 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=500000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=510000 ns | PC=00000024 | Instr=0a000006 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=520000 ns | PC=00000028 | Instr=e3520004 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=530000 ns | PC=0000002c | Instr=0a000009 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=540000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=550000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=560000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000007 | WrtDat=00000005 | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=570000 ns | PC=0000001c | Instr=0a000003 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000005 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=580000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=590000 ns | PC=00000024 | Instr=0a000006 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=600000 ns | PC=00000028 | Instr=e3520004 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=610000 ns | PC=0000002c | Instr=0a000009 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=620000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=630000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=640000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000007 | WrtDat=00000005 | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=650000 ns | PC=0000001c | Instr=0a000003 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000005 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=660000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=670000 ns | PC=00000024 | Instr=0a000006 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=680000 ns | PC=00000028 | Instr=e3520004 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=690000 ns | PC=0000002c | Instr=0a000009 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=700000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=710000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=720000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000007 | WrtDat=00000005 | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=730000 ns | PC=0000001c | Instr=0a000003 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000005 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=740000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=750000 ns | PC=00000024 | Instr=0a000006 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=760000 ns | PC=00000028 | Instr=e3520004 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=770000 ns | PC=0000002c | Instr=0a000009 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=780000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=790000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=800000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000007 | WrtDat=00000005 | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=810000 ns | PC=0000001c | Instr=0a000003 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000005 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=820000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=830000 ns | PC=00000024 | Instr=0a000006 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=840000 ns | PC=00000028 | Instr=e3520004 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=850000 ns | PC=0000002c | Instr=0a000009 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=860000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=870000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=880000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000007 | WrtDat=00000005 | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=890000 ns | PC=0000001c | Instr=0a000003 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000005 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=900000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=910000 ns | PC=00000024 | Instr=0a000006 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=920000 ns | PC=00000028 | Instr=e3520004 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=930000 ns | PC=0000002c | Instr=0a000009 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=940000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=950000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000014 | WrtDat=0000000a | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=960000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000007 | WrtDat=00000005 | MemWrt=0 | RdDat=00000000 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=970000 ns | PC=0000001c | Instr=0a000003 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000005 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=980000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=990000 ns | PC=00000024 | Instr=0a000006 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=1000000 ns | PC=00000028 | Instr=e3520004 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Time=1010000 ns | PC=0000002c | Instr=0a000009 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=0000000a R1=0000000a R2=00000005 R3=00000000 R7=00000000
+# Resultado de la Suma (10 + 5) en DMEM[0x000C]: 00000000 (Decimal: 0)
+# 
+# --- Caso de prueba 2: MULTIPLICACIÓN (4 * 6) ---
+# Time=1020000 ns | PC=00000000 | Instr=e3a07000 | ALURes=00000000 | WrtDat=00000000 | MemWrt=0 | RdDat=00000001 | R0=00000000 R1=00000000 R2=00000000 R3=00000000 R7=00000000
+# Time=1030000 ns | PC=00000000 | Instr=e3a07000 | ALURes=00000000 | WrtDat=00000000 | MemWrt=0 | RdDat=00000004 | R0=00000000 R1=00000000 R2=00000000 R3=00000000 R7=00000000
+# Time=1040000 ns | PC=00000004 | Instr=e5970000 | ALURes=00000000 | WrtDat=00000000 | MemWrt=0 | RdDat=00000004 | R0=00000000 R1=00000000 R2=00000000 R3=00000000 R7=00000000
+# Time=1050000 ns | PC=00000008 | Instr=e5971004 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000004 | R0=00000004 R1=00000000 R2=00000000 R3=00000000 R7=00000000
+# Time=1060000 ns | PC=0000000c | Instr=e5972008 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000004 R2=00000000 R3=00000000 R7=00000000
+# Time=1070000 ns | PC=00000010 | Instr=e3520001 | ALURes=00000007 | WrtDat=00000004 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000004 R2=00000006 R3=00000000 R7=00000000
+# Time=1080000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000004 R2=00000006 R3=00000000 R7=00000000
+# Time=1090000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000008 | WrtDat=00000006 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000004 R2=00000006 R3=00000000 R7=00000000
+# Time=1100000 ns | PC=0000001c | Instr=0a000003 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000004 R2=00000006 R3=00000000 R7=00000000
+# Time=1110000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000004 R2=00000006 R3=00000000 R7=00000000
+# Time=1120000 ns | PC=00000024 | Instr=0a000006 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000004 R2=00000006 R3=00000000 R7=00000000
+# Time=1130000 ns | PC=00000028 | Instr=e3520004 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000004 R2=00000006 R3=00000000 R7=00000000
+# Time=1140000 ns | PC=0000002c | Instr=0a000009 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000004 R2=00000006 R3=00000000 R7=00000000
+# Time=1150000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000004 R2=00000006 R3=00000000 R7=00000000
+# Time=1160000 ns | PC=00000008 | Instr=e5971004 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000004 R2=00000006 R3=00000000 R7=00000000
+# Time=1170000 ns | PC=0000000c | Instr=e5972008 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1180000 ns | PC=00000010 | Instr=e3520001 | ALURes=00000007 | WrtDat=00000003 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1190000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1200000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000008 | WrtDat=00000006 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1210000 ns | PC=0000001c | Instr=0a000003 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1220000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1230000 ns | PC=00000024 | Instr=0a000006 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1240000 ns | PC=00000028 | Instr=e3520004 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1250000 ns | PC=0000002c | Instr=0a000009 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1260000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1270000 ns | PC=00000008 | Instr=e5971004 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1280000 ns | PC=0000000c | Instr=e5972008 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1290000 ns | PC=00000010 | Instr=e3520001 | ALURes=00000007 | WrtDat=00000003 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1300000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1310000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000008 | WrtDat=00000006 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1320000 ns | PC=0000001c | Instr=0a000003 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1330000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1340000 ns | PC=00000024 | Instr=0a000006 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1350000 ns | PC=00000028 | Instr=e3520004 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1360000 ns | PC=0000002c | Instr=0a000009 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1370000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1380000 ns | PC=00000008 | Instr=e5971004 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1390000 ns | PC=0000000c | Instr=e5972008 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1400000 ns | PC=00000010 | Instr=e3520001 | ALURes=00000007 | WrtDat=00000003 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1410000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1420000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000008 | WrtDat=00000006 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1430000 ns | PC=0000001c | Instr=0a000003 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1440000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1450000 ns | PC=00000024 | Instr=0a000006 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1460000 ns | PC=00000028 | Instr=e3520004 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1470000 ns | PC=0000002c | Instr=0a000009 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1480000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1490000 ns | PC=00000008 | Instr=e5971004 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1500000 ns | PC=0000000c | Instr=e5972008 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1510000 ns | PC=00000010 | Instr=e3520001 | ALURes=00000007 | WrtDat=00000003 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1520000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1530000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000008 | WrtDat=00000006 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1540000 ns | PC=0000001c | Instr=0a000003 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1550000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1560000 ns | PC=00000024 | Instr=0a000006 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1570000 ns | PC=00000028 | Instr=e3520004 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1580000 ns | PC=0000002c | Instr=0a000009 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1590000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1600000 ns | PC=00000008 | Instr=e5971004 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1610000 ns | PC=0000000c | Instr=e5972008 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1620000 ns | PC=00000010 | Instr=e3520001 | ALURes=00000007 | WrtDat=00000003 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1630000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1640000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000008 | WrtDat=00000006 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1650000 ns | PC=0000001c | Instr=0a000003 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1660000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1670000 ns | PC=00000024 | Instr=0a000006 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1680000 ns | PC=00000028 | Instr=e3520004 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1690000 ns | PC=0000002c | Instr=0a000009 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1700000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1710000 ns | PC=00000008 | Instr=e5971004 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1720000 ns | PC=0000000c | Instr=e5972008 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1730000 ns | PC=00000010 | Instr=e3520001 | ALURes=00000007 | WrtDat=00000003 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1740000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1750000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000008 | WrtDat=00000006 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1760000 ns | PC=0000001c | Instr=0a000003 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1770000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1780000 ns | PC=00000024 | Instr=0a000006 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1790000 ns | PC=00000028 | Instr=e3520004 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1800000 ns | PC=0000002c | Instr=0a000009 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1810000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1820000 ns | PC=00000008 | Instr=e5971004 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1830000 ns | PC=0000000c | Instr=e5972008 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1840000 ns | PC=00000010 | Instr=e3520001 | ALURes=00000007 | WrtDat=00000003 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1850000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1860000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000008 | WrtDat=00000006 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1870000 ns | PC=0000001c | Instr=0a000003 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1880000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1890000 ns | PC=00000024 | Instr=0a000006 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1900000 ns | PC=00000028 | Instr=e3520004 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1910000 ns | PC=0000002c | Instr=0a000009 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1920000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1930000 ns | PC=00000008 | Instr=e5971004 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1940000 ns | PC=0000000c | Instr=e5972008 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1950000 ns | PC=00000010 | Instr=e3520001 | ALURes=00000007 | WrtDat=00000003 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1960000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000008 | WrtDat=00000004 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1970000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000008 | WrtDat=00000006 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1980000 ns | PC=0000001c | Instr=0a000003 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=1990000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000009 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=2000000 ns | PC=00000024 | Instr=0a000006 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=2010000 ns | PC=00000028 | Instr=e3520004 | ALURes=0000000a | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Time=2020000 ns | PC=0000002c | Instr=0a000009 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000003 | R0=00000004 R1=00000003 R2=00000006 R3=00000000 R7=00000000
+# Resultado de la Multiplicación (4 * 6) en DMEM[0x000C]: 00000000 (Decimal: 0)
+# 
+# --- Caso de prueba 3: DIVISIÓN POR CERO (50 / 0) ---
+# Time=2030000 ns | PC=00000000 | Instr=e3a07000 | ALURes=00000000 | WrtDat=00000000 | MemWrt=0 | RdDat=00000006 | R0=00000000 R1=00000000 R2=00000000 R3=00000000 R7=00000000
+# Time=2040000 ns | PC=00000000 | Instr=e3a07000 | ALURes=00000000 | WrtDat=00000000 | MemWrt=0 | RdDat=00000032 | R0=00000000 R1=00000000 R2=00000000 R3=00000000 R7=00000000
+# Time=2050000 ns | PC=00000004 | Instr=e5970000 | ALURes=00000000 | WrtDat=00000000 | MemWrt=0 | RdDat=00000032 | R0=00000000 R1=00000000 R2=00000000 R3=00000000 R7=00000000
+# Time=2060000 ns | PC=00000008 | Instr=e5971004 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000032 | R0=00000032 R1=00000000 R2=00000000 R3=00000000 R7=00000000
+# Time=2070000 ns | PC=0000000c | Instr=e5972008 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000000 | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2080000 ns | PC=00000010 | Instr=e3520001 | ALURes=00000001 | WrtDat=00000032 | MemWrt=0 | RdDat=00000004 | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2090000 ns | PC=00000014 | Instr=0a000000 | ALURes=00000064 | WrtDat=00000032 | MemWrt=0 | RdDat=00000032 | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2100000 ns | PC=00000018 | Instr=e3520002 | ALURes=00000002 | WrtDat=00000000 | MemWrt=0 | RdDat=00000000 | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2110000 ns | PC=0000001c | Instr=0a000003 | ALURes=00000032 | WrtDat=00000000 | MemWrt=0 | RdDat=00000032 | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2120000 ns | PC=00000020 | Instr=e3520003 | ALURes=00000003 | WrtDat=00000000 | MemWrt=0 | RdDat=00000000 | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2130000 ns | PC=00000024 | Instr=0a000006 | ALURes=00000032 | WrtDat=00000000 | MemWrt=0 | RdDat=00000032 | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2140000 ns | PC=00000028 | Instr=e3520004 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000000 | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2150000 ns | PC=0000002c | Instr=0a000009 | ALURes=00000032 | WrtDat=00000000 | MemWrt=0 | RdDat=00000000 | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2160000 ns | PC=00000030 | Instr=ea000010 | ALURes=00000064 | WrtDat=00000032 | MemWrt=0 | RdDat=00000000 | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2170000 ns | PC=00000064 | Instr=e587300c | ALURes=0000000c | WrtDat=00000000 | MemWrt=1 | RdDat=00000000 | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2180000 ns | ESCRIBIENDO en RAM[0x003] = 00000000 (Dirección en bus: 0000000c)
+# Time=2180000 ns | PC=00000068 | Instr=eaffffff | ALURes=000000e0 | WrtDat=00000070 | MemWrt=0 | RdDat=00000000 | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2190000 ns | PC=000000e0 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=00000000 | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2200000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2200000 ns | PC=000000e4 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2210000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2210000 ns | PC=000000e8 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2220000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2220000 ns | PC=000000ec | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2230000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2230000 ns | PC=000000f0 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2240000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2240000 ns | PC=000000f4 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2250000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2250000 ns | PC=000000f8 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2260000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2260000 ns | PC=000000fc | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2270000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2270000 ns | PC=00000100 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2280000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2280000 ns | PC=00000104 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2290000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2290000 ns | PC=00000108 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2300000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2300000 ns | PC=0000010c | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2310000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2310000 ns | PC=00000110 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2320000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2320000 ns | PC=00000114 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2330000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2330000 ns | PC=00000118 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2340000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2340000 ns | PC=0000011c | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2350000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2350000 ns | PC=00000120 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2360000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2360000 ns | PC=00000124 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2370000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2370000 ns | PC=00000128 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2380000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2380000 ns | PC=0000012c | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2390000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2390000 ns | PC=00000130 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2400000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2400000 ns | PC=00000134 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2410000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2410000 ns | PC=00000138 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2420000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2420000 ns | PC=0000013c | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2430000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2430000 ns | PC=00000140 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2440000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2440000 ns | PC=00000144 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2450000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2450000 ns | PC=00000148 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2460000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2460000 ns | PC=0000014c | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2470000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2470000 ns | PC=00000150 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2480000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2480000 ns | PC=00000154 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2490000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2490000 ns | PC=00000158 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2500000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2500000 ns | PC=0000015c | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2510000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2510000 ns | PC=00000160 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2520000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2520000 ns | PC=00000164 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2530000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2530000 ns | PC=00000168 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2540000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2540000 ns | PC=0000016c | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2550000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2550000 ns | PC=00000170 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2560000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2560000 ns | PC=00000174 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2570000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2570000 ns | PC=00000178 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2580000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2580000 ns | PC=0000017c | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2590000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2590000 ns | PC=00000180 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2600000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2600000 ns | PC=00000184 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2610000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2610000 ns | PC=00000188 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2620000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2620000 ns | PC=0000018c | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2630000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2630000 ns | PC=00000190 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2640000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2640000 ns | PC=00000194 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2650000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2650000 ns | PC=00000198 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2660000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2660000 ns | PC=0000019c | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2670000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2670000 ns | PC=000001a0 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2680000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2680000 ns | PC=000001a4 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2690000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2690000 ns | PC=000001a8 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2700000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2700000 ns | PC=000001ac | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2710000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2710000 ns | PC=000001b0 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2720000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2720000 ns | PC=000001b4 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2730000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2730000 ns | PC=000001b8 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2740000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2740000 ns | PC=000001bc | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2750000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2750000 ns | PC=000001c0 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2760000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2760000 ns | PC=000001c4 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2770000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2770000 ns | PC=000001c8 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2780000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2780000 ns | PC=000001cc | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2790000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2790000 ns | PC=000001d0 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2800000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2800000 ns | PC=000001d4 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2810000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2810000 ns | PC=000001d8 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2820000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2820000 ns | PC=000001dc | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2830000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2830000 ns | PC=000001e0 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2840000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2840000 ns | PC=000001e4 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2850000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2850000 ns | PC=000001e8 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2860000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2860000 ns | PC=000001ec | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2870000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2870000 ns | PC=000001f0 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2880000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2880000 ns | PC=000001f4 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2890000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2890000 ns | PC=000001f8 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2900000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2900000 ns | PC=000001fc | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2910000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2910000 ns | PC=00000200 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2920000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2920000 ns | PC=00000204 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2930000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2930000 ns | PC=00000208 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2940000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2940000 ns | PC=0000020c | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2950000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2950000 ns | PC=00000210 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2960000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2960000 ns | PC=00000214 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2970000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2970000 ns | PC=00000218 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2980000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2980000 ns | PC=0000021c | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=2990000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=2990000 ns | PC=00000220 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=3000000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=3000000 ns | PC=00000224 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=3010000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=3010000 ns | PC=00000228 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=3020000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=3020000 ns | PC=0000022c | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=3030000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Time=3030000 ns | PC=00000230 | Instr=xxxxxxxx | ALURes=xxxxxxxx | WrtDat=xxxxxxxx | MemWrt=0 | RdDat=deadbeef | R0=00000032 R1=00000032 R2=00000000 R3=00000000 R7=00000000
+# Time=3040000 ns | ERROR: Intento de LECTURA FUERA DE LÍMITES (address=xxxxxxxx, ram_index=0xxx)
+# Resultado de la División por Cero (50 / 0) en DMEM[0x000C]: 00000000 (Decimal: 0)
+# 
+# 
+# === Prueba de la calculadora ARM completada ===
+# 
+# ** Note: $finish    : C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/processor_tb.sv(129)
+#    Time: 3040 ns  Iteration: 1  Instance: /processor_tb
 # 1
-# Break in Module controller_tb at C:/Users/YITAN/OneDrive/Escritorio/TDD_Docs_II2024/jtenorio_aflores_klobo_digital_design_lab_2024-master/Proyecto/Processor/controller_tb.sv line 60
-# End time: 18:14:03 on Jun 03,2025, Elapsed time: 0:01:19
-# Errors: 0, Warnings: 2
+# Break in Module processor_tb at C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/processor_tb.sv line 129
+# End time: 06:49:47 on Jun 13,2025, Elapsed time: 0:01:35
+# Errors: 0, Warnings: 4

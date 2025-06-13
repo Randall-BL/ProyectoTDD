@@ -1,16 +1,27 @@
 module instruction_memory(
-    input  logic [31:0] A,      // Dirección de entrada (PC)
-    output logic [31:0] RD      // Instrucción leída
+    input  logic [31:0] A,
+    output logic [31:0] RD
 );
-    // Memoria ROM
-    logic [31:0] rom [0:63];    // 64 palabras de 32 bits
+    // Asegúrate de que el tamaño sea de 1024 palabras (0 a 1023)
+    logic [31:0] ROM [0:1023]; 
 
-    // Inicialización desde archivo
+    // El índice debe ser de 10 bits, usando address[11:2]
+    logic [9:0] rom_index; 
+    assign rom_index = A[11:2]; 
+
     initial begin
-        $readmemh("./program.dat", rom);
+        // Asegúrate de que esta ruta sea ABSOLUTAMENTE CORRECTA
+        $readmemh("C:/Users/YITAN/OneDrive/Escritorio/Nueva carpeta (2)/TESTimem.dat", ROM); 
+
+        // --- AÑADE ESTOS DISPLAYS DE DEPURACIÓN AQUÍ ---
+        $display("--- Depuración de Carga de IMEM ---");
+        $display("ROM[0x000] (esperado LDR R7) = %h", ROM[0]);
+        $display("ROM[0x001] (esperado MOV R0) = %h", ROM[1]);
+        $display("ROM[0x002] (esperado MOV R1) = %h", ROM[2]);
+        $display("--- Fin Depuración IMEM ---");
+        // --- FIN DE LOS DISPLAYS DE DEPURACIÓN ---
     end
 
-    // Lectura asíncrona
-    assign RD = rom[A[7:2]];
+    assign RD = ROM[rom_index];
 
 endmodule
