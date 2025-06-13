@@ -1,15 +1,13 @@
 module processor(
-    input  logic        clk,
-    input  logic        reset,
-	 input  logic			next_state_vga,
-	 
-	 
-	 // Señales de entrada en la VGA
-    output logic vgaclk, // 25.175 MHz VGA clock
+    input  logic         clk,
+    input  logic         reset,
+    input  logic         next_state_vga,
+    
+    // Señales de salida en la VGA
+    output logic vgaclk,
     output logic hsync, vsync,
     output logic sync_b, blank_b,
     output logic [7:0] r, g, b
-	 
 );
     // Señales internas del procesador
     logic [31:0] PC;
@@ -19,8 +17,15 @@ module processor(
     logic [31:0] ALUResult;
     logic        MemWrite;
 
+    // *** AGREGAR ESTAS SEÑALES INTERNAS PARA REGISTROS QUE SERÁN MONITOREADAS ***
+    logic [31:0] tb_R0_val;
+    logic [31:0] tb_R1_val;
+    logic [31:0] tb_R2_val;
+    logic [31:0] tb_R3_val;
+    logic [31:0] tb_R7_val; // <--- ¡Agrega esta señal!
+
     // Procesador ARM
-    arm arm(
+    arm arm_inst(
         .clk(clk),
         .reset(reset),
         .PC(PC),
@@ -28,7 +33,13 @@ module processor(
         .MemWrite(MemWrite),
         .ALUResult(ALUResult),
         .WriteData(WriteData),
-        .ReadData(ReadData)
+        .ReadData(ReadData),
+        // *** CONECTAR LOS NUEVOS PUERTOS DE REGISTRO ***
+        .R0_val(tb_R0_val), // Conectando a las señales internas de processor
+        .R1_val(tb_R1_val),
+        .R2_val(tb_R2_val),
+        .R3_val(tb_R3_val),
+        .R7_val(tb_R7_val)  // <--- ¡Conecta tb_R7_val aquí!
     );
 
     // Memoria de Instrucciones
@@ -38,18 +49,18 @@ module processor(
     );
 
     // Memoria de Datos
-    data_memory dmem(
+    data_memory dmem( // Renombrado a dmem para claridad
         .clk(clk),
         .mem_write(MemWrite),
         .address(ALUResult),
         .write_data(WriteData),
         .read_data(ReadData)
     );
-	 
-	  // Instanciación de la inicialización de VGA
+    
+    // Instanciación de la inicialización de VGA
     vga_initializer vga_inst(
         .clk(clk),
-        .nxt(next_state_vga), // Usando `reset` para la señal `nxt` en este caso
+        .nxt(next_state_vga),
         .vgaclk(vgaclk),
         .hsync(hsync),
         .vsync(vsync),
@@ -61,47 +72,3 @@ module processor(
     );
 
 endmodule
-
-// PARA COMPILAR MAS RAPIDO Y PROBAR EL PROCE (TESTBENCH) USAR ESTE
-// Y COMENTAR EL OTRO
-
-//module processor(
-//    input  logic        clk,
-//    input  logic        reset
-//);
-//    // Señales internas del procesador
-//    logic [31:0] PC;
-//    logic [31:0] Instr;
-//    logic [31:0] ReadData;
-//    logic [31:0] WriteData;
-//    logic [31:0] ALUResult;
-//    logic        MemWrite;
-//
-//    // Procesador ARM
-//    arm arm(
-//        .clk(clk),
-//        .reset(reset),
-//        .PC(PC),
-//        .Instr(Instr),
-//        .MemWrite(MemWrite),
-//        .ALUResult(ALUResult),
-//        .WriteData(WriteData),
-//        .ReadData(ReadData)
-//    );
-//
-//    // Memoria de Instrucciones
-//    instruction_memory imem(
-//        .A(PC),
-//        .RD(Instr)
-//    );
-//
-//    // Memoria de Datos
-//    data_memory dmem(
-//        .clk(clk),
-//        .mem_write(MemWrite),
-//        .address(ALUResult),
-//        .write_data(WriteData),
-//        .read_data(ReadData)
-//    );
-//
-//endmodule
