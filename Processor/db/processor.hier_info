@@ -416,86 +416,80 @@ ShiftEn <= decoder:dec.ShiftEn
 
 
 |processor|arm:arm_inst|controller:c|decoder:dec
-Op[0] => Mux0.IN4
-Op[0] => Mux1.IN5
-Op[0] => Decoder1.IN1
-Op[1] => Mux0.IN3
-Op[1] => Mux1.IN4
-Op[1] => Decoder1.IN0
+Op[0] => Decoder0.IN1
+Op[0] => ALUControl.OUTPUTSELECT
+Op[0] => ALUControl.OUTPUTSELECT
+Op[0] => ALUControl.OUTPUTSELECT
+Op[0] => Mux2.IN4
+Op[0] => Mux3.IN4
+Op[1] => Decoder0.IN0
+Op[1] => Mux2.IN3
+Op[1] => Mux3.IN3
 Funct[0] => FlagW.IN1
 Funct[0] => FlagW.DATAB
-Funct[0] => Mux0.IN5
+Funct[0] => Mux3.IN5
 Funct[0] => MemtoReg.DATAB
 Funct[0] => MemW.DATAB
-Funct[1] => Decoder0.IN3
+Funct[0] => RegSrc.DATAB
 Funct[1] => Equal0.IN3
 Funct[1] => Equal1.IN2
-Funct[1] => Equal3.IN3
-Funct[2] => Decoder0.IN2
+Funct[1] => Equal2.IN3
+Funct[2] => Mux0.IN10
+Funct[2] => Mux1.IN5
 Funct[2] => Equal0.IN1
 Funct[2] => Equal1.IN3
-Funct[2] => Equal3.IN2
-Funct[3] => Decoder0.IN1
+Funct[2] => Equal2.IN2
+Funct[3] => Mux0.IN9
 Funct[3] => Equal0.IN2
 Funct[3] => Equal1.IN1
-Funct[3] => Equal3.IN1
-Funct[4] => Decoder0.IN0
+Funct[3] => Equal2.IN1
+Funct[4] => Mux0.IN8
+Funct[4] => Mux1.IN4
 Funct[4] => BL.DATAB
 Funct[4] => Equal0.IN0
 Funct[4] => Equal1.IN0
-Funct[4] => Equal3.IN0
-Funct[5] => ShiftEn.OUTPUTSELECT
+Funct[4] => Equal2.IN0
 Funct[5] => always0.IN1
 Funct[5] => always0.IN1
-Funct[5] => always0.IN1
-Funct[5] => ImmSrc.DATAA
 Funct[5] => ImmSrc.DATAB
-Funct[5] => ImmSrc.DATAB
-Funct[5] => ImmSrc.DATAB
-Funct[5] => ImmSrc.DATAB
-Funct[5] => ALUSrc.DATAA
-Funct[5] => ALUSrc.DATAB
-Funct[5] => ALUSrc.DATAB
-Funct[5] => ALUSrc.DATAB
-Funct[5] => ALUSrc.DATAB
+Funct[5] => Mux2.IN5
 Funct[5] => always0.IN1
 Funct[5] => always0.IN1
-Rd[0] => ShiftEn.DATAA
 Rd[0] => Equal6.IN3
 Rd[1] => Equal6.IN2
 Rd[2] => Equal6.IN1
 Rd[3] => Equal6.IN0
-Mul[0] => ~NO_FANOUT~
-Mul[1] => ~NO_FANOUT~
-Mul[2] => ~NO_FANOUT~
-Mul[3] => ~NO_FANOUT~
-movhi_field[0] => Equal2.IN3
-movhi_field[1] => Equal2.IN2
-movhi_field[2] => Equal2.IN1
-movhi_field[3] => Equal2.IN0
+Mul[0] => Equal3.IN1
+Mul[1] => Equal3.IN3
+Mul[2] => Equal3.IN2
+Mul[3] => Equal3.IN0
+movhi_field[0] => ~NO_FANOUT~
+movhi_field[1] => ~NO_FANOUT~
+movhi_field[2] => ~NO_FANOUT~
+movhi_field[3] => ~NO_FANOUT~
 FlagW[0] <= FlagW.DB_MAX_OUTPUT_PORT_TYPE
 FlagW[1] <= FlagW.DB_MAX_OUTPUT_PORT_TYPE
 PCS <= PCS.DB_MAX_OUTPUT_PORT_TYPE
-RegW <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+RegW <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 MemW <= MemW.DB_MAX_OUTPUT_PORT_TYPE
 NoWrite <= NoWrite.DB_MAX_OUTPUT_PORT_TYPE
 MemtoReg <= MemtoReg.DB_MAX_OUTPUT_PORT_TYPE
-ALUSrc[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+ALUSrc[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 ALUSrc[1] <= <GND>
 ImmSrc[0] <= ImmSrc.DB_MAX_OUTPUT_PORT_TYPE
-ImmSrc[1] <= ImmSrc.DB_MAX_OUTPUT_PORT_TYPE
+ImmSrc[1] <= <GND>
 RegSrc[0] <= <GND>
-RegSrc[1] <= <GND>
+RegSrc[1] <= RegSrc.DB_MAX_OUTPUT_PORT_TYPE
 ALUControl[0] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
 ALUControl[1] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
-ALUControl[2] <= <GND>
+ALUControl[2] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
 BL <= BL.DB_MAX_OUTPUT_PORT_TYPE
-ShiftEn <= ShiftEn.DB_MAX_OUTPUT_PORT_TYPE
+ShiftEn <= <GND>
 
 
 |processor|arm:arm_inst|controller:c|condlogic:cl
-clk => clk.IN2
-reset => reset.IN2
+clk => ~NO_FANOUT~
+reset => ~NO_FANOUT~
 Cond[0] => Cond[0].IN1
 Cond[1] => Cond[1].IN1
 Cond[2] => Cond[2].IN1
@@ -513,28 +507,6 @@ NoWrite => RegWrite.IN1
 PCSrc <= PCSrc.DB_MAX_OUTPUT_PORT_TYPE
 RegWrite <= RegWrite.DB_MAX_OUTPUT_PORT_TYPE
 MemWrite <= MemWrite.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|arm:arm_inst|controller:c|condlogic:cl|flopr:flagreg1
-clk => q[0]~reg0.CLK
-clk => q[1]~reg0.CLK
-reset => q[0]~reg0.ACLR
-reset => q[1]~reg0.ACLR
-d[0] => q[0]~reg0.DATAIN
-d[1] => q[1]~reg0.DATAIN
-q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|processor|arm:arm_inst|controller:c|condlogic:cl|flopr:flagreg0
-clk => q[0]~reg0.CLK
-clk => q[1]~reg0.CLK
-reset => q[0]~reg0.ACLR
-reset => q[1]~reg0.ACLR
-d[0] => q[0]~reg0.DATAIN
-d[1] => q[1]~reg0.DATAIN
-q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |processor|arm:arm_inst|controller:c|condlogic:cl|condcheck:cc

@@ -51,5 +51,5 @@ def generate_data_test_suma_dat(file_path):
 if __name__ == "__main__":
     # Define la ruta completa donde quieres que se guarde el archivo.
     # Asegúrate de que esta ruta coincida exactamente con la que tienes en tu módulo data_memory.
-    data_file_path = "C:/Users/YITAN/OneDrive/Escritorio/Nueva carpeta (2)/data_test_suma.dat"
+    data_file_path = "calculadora ensamblador/program.dat"
     generate_data_test_suma_dat(data_file_path)

@@ -1,6 +1,6 @@
 Analysis & Elaboration report for processor
-Fri Jun 13 06:48:03 2025
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Sat Jun 14 16:57:33 2025
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
 ---------------------
@@ -9,42 +9,40 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: arm:arm_inst|controller:c|condlogic:cl|flopr:flagreg1
-  5. Parameter Settings for User Entity Instance: arm:arm_inst|controller:c|condlogic:cl|flopr:flagreg0
-  6. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|flopr:pcreg
-  7. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|adder:pcadd4
-  8. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|adder:pcadd8
-  9. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|mux2:pcmux
- 10. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|mux2:ra1mux
- 11. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|mux2:ra2mux
- 12. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|mux2:link_mux
- 13. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|mux2:shift_mux
- 14. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|mux2:srcbmux
- 15. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|alu:main_alu
- 16. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Sub:sub_op
- 17. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Adder:adder_op
- 18. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Mult:mult_op
- 19. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|mux2:resmux
- 20. Parameter Settings for User Entity Instance: vga_initializer:vga_inst|vgaController:vgaCont
- 21. Analysis & Elaboration Settings
- 22. Port Connectivity Checks: "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Mult:mult_op"
- 23. Port Connectivity Checks: "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Adder:adder_op|full_adder:generate_N_bit_Adder[0].f"
- 24. Port Connectivity Checks: "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Sub:sub_op|full_subtractor:generate_N_bit_Sub[31].f"
- 25. Port Connectivity Checks: "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Sub:sub_op|full_subtractor:generate_N_bit_Sub[0].f"
- 26. Port Connectivity Checks: "arm:arm_inst|datapath:dp|mux2:ra1mux"
- 27. Port Connectivity Checks: "arm:arm_inst|datapath:dp|adder:pcadd8"
- 28. Port Connectivity Checks: "arm:arm_inst|datapath:dp|adder:pcadd4"
- 29. Port Connectivity Checks: "arm:arm_inst|datapath:dp"
- 30. Port Connectivity Checks: "arm:arm_inst"
- 31. Analysis & Elaboration Messages
- 32. Analysis & Elaboration Suppressed Messages
+  4. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|flopr:pcreg
+  5. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|adder:pcadd4
+  6. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|adder:pcadd8
+  7. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|mux2:pcmux
+  8. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|mux2:ra1mux
+  9. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|mux2:ra2mux
+ 10. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|mux2:link_mux
+ 11. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|mux2:shift_mux
+ 12. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|mux2:srcbmux
+ 13. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|alu:main_alu
+ 14. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Sub:sub_op
+ 15. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Adder:adder_op
+ 16. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Mult:mult_op
+ 17. Parameter Settings for User Entity Instance: arm:arm_inst|datapath:dp|mux2:resmux
+ 18. Parameter Settings for User Entity Instance: vga_initializer:vga_inst|vgaController:vgaCont
+ 19. Analysis & Elaboration Settings
+ 20. Port Connectivity Checks: "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Mult:mult_op"
+ 21. Port Connectivity Checks: "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Adder:adder_op|full_adder:generate_N_bit_Adder[0].f"
+ 22. Port Connectivity Checks: "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Sub:sub_op|full_subtractor:generate_N_bit_Sub[31].f"
+ 23. Port Connectivity Checks: "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Sub:sub_op|full_subtractor:generate_N_bit_Sub[0].f"
+ 24. Port Connectivity Checks: "arm:arm_inst|datapath:dp|mux2:ra1mux"
+ 25. Port Connectivity Checks: "arm:arm_inst|datapath:dp|adder:pcadd8"
+ 26. Port Connectivity Checks: "arm:arm_inst|datapath:dp|adder:pcadd4"
+ 27. Port Connectivity Checks: "arm:arm_inst|datapath:dp"
+ 28. Port Connectivity Checks: "arm:arm_inst"
+ 29. Analysis & Elaboration Messages
+ 30. Analysis & Elaboration Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -61,22 +59,22 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Fri Jun 13 06:48:03 2025       ;
-; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                 ; processor                                   ;
-; Top-level Entity Name         ; processor                                   ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                 ;
++-------------------------------+------------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Sat Jun 14 16:57:33 2025          ;
+; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                 ; processor                                      ;
+; Top-level Entity Name         ; processor                                      ;
+; Family                        ; Cyclone V                                      ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
+; Total registers               ; N/A until Partition Merge                      ;
+; Total pins                    ; N/A until Partition Merge                      ;
+; Total virtual pins            ; N/A until Partition Merge                      ;
+; Total block memory bits       ; N/A until Partition Merge                      ;
+; Total PLLs                    ; N/A until Partition Merge                      ;
+; Total DLLs                    ; N/A until Partition Merge                      ;
++-------------------------------+------------------------------------------------+
 
 
 +------------------------------------------+
@@ -93,26 +91,6 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 +----------------------------+-------------+
-
-
-+----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm_inst|controller:c|condlogic:cl|flopr:flagreg1 ;
-+----------------+-------+---------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                      ;
-+----------------+-------+---------------------------------------------------------------------------+
-; WIDTH          ; 2     ; Signed Integer                                                            ;
-+----------------+-------+---------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm_inst|controller:c|condlogic:cl|flopr:flagreg0 ;
-+----------------+-------+---------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                      ;
-+----------------+-------+---------------------------------------------------------------------------+
-; WIDTH          ; 2     ; Signed Integer                                                            ;
-+----------------+-------+---------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------------------------+
@@ -455,172 +433,171 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Jun 13 06:47:58 2025
+    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+    Info: Processing started: Sat Jun 14 16:57:27 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file nbit_sub.sv
-    Info (12023): Found entity 1: Nbit_Sub File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/Nbit_Sub.sv Line: 1
+    Info (12023): Found entity 1: Nbit_Sub File: E:/TEC/Digitales/ProyectoTDD/Processor/Nbit_Sub.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file nbit_adder.sv
-    Info (12023): Found entity 1: Nbit_Adder File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/Nbit_Adder.sv Line: 1
+    Info (12023): Found entity 1: Nbit_Adder File: E:/TEC/Digitales/ProyectoTDD/Processor/Nbit_Adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file full_subtractor.sv
-    Info (12023): Found entity 1: full_subtractor File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/full_subtractor.sv Line: 1
+    Info (12023): Found entity 1: full_subtractor File: E:/TEC/Digitales/ProyectoTDD/Processor/full_subtractor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder.sv
-    Info (12023): Found entity 1: full_adder File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/full_adder.sv Line: 1
+    Info (12023): Found entity 1: full_adder File: E:/TEC/Digitales/ProyectoTDD/Processor/full_adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.sv
-    Info (12023): Found entity 1: datapath File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/datapath.sv Line: 1
+    Info (12023): Found entity 1: datapath File: E:/TEC/Digitales/ProyectoTDD/Processor/datapath.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flopr.sv
-    Info (12023): Found entity 1: flopr File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/flopr.sv Line: 1
+    Info (12023): Found entity 1: flopr File: E:/TEC/Digitales/ProyectoTDD/Processor/flopr.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file instruction_memory.sv
-    Info (12023): Found entity 1: instruction_memory File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/instruction_memory.sv Line: 1
+    Info (12023): Found entity 1: instruction_memory File: E:/TEC/Digitales/ProyectoTDD/Processor/instruction_memory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rom.v
-    Info (12023): Found entity 1: rom File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/rom.v Line: 40
+    Info (12023): Found entity 1: rom File: E:/TEC/Digitales/ProyectoTDD/Processor/rom.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file instruction_memory_tb.sv
-    Info (12023): Found entity 1: instruction_memory_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/instruction_memory_tb.sv Line: 3
+    Info (12023): Found entity 1: instruction_memory_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/instruction_memory_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file flopr_tb.sv
-    Info (12023): Found entity 1: flopr_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/flopr_tb.sv Line: 2
+    Info (12023): Found entity 1: flopr_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/flopr_tb.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
-    Info (12023): Found entity 1: adder File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/adder.sv Line: 1
+    Info (12023): Found entity 1: adder File: E:/TEC/Digitales/ProyectoTDD/Processor/adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder_tb.sv
-    Info (12023): Found entity 1: adder_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/adder_tb.sv Line: 3
+    Info (12023): Found entity 1: adder_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/adder_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
-    Info (12023): Found entity 1: mux2 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/mux2.sv Line: 1
+    Info (12023): Found entity 1: mux2 File: E:/TEC/Digitales/ProyectoTDD/Processor/mux2.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2_tb.sv
-    Info (12023): Found entity 1: mux2_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/mux2_tb.sv Line: 3
+    Info (12023): Found entity 1: mux2_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/mux2_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file register_file.sv
-    Info (12023): Found entity 1: register_file File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/register_file.sv Line: 1
+    Info (12023): Found entity 1: register_file File: E:/TEC/Digitales/ProyectoTDD/Processor/register_file.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file register_file_tb.sv
-    Info (12023): Found entity 1: register_file_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/register_file_tb.sv Line: 3
+    Info (12023): Found entity 1: register_file_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/register_file_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file extend.sv
-    Info (12023): Found entity 1: extend File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/extend.sv Line: 1
+    Info (12023): Found entity 1: extend File: E:/TEC/Digitales/ProyectoTDD/Processor/extend.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file extend_tb.sv
-    Info (12023): Found entity 1: extend_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/extend_tb.sv Line: 3
+    Info (12023): Found entity 1: extend_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/extend_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: alu File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/alu.sv Line: 10
+    Info (12023): Found entity 1: alu File: E:/TEC/Digitales/ProyectoTDD/Processor/alu.sv Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.sv
-    Info (12023): Found entity 1: alu_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/alu_tb.sv Line: 3
+    Info (12023): Found entity 1: alu_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/alu_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file condcheck.sv
-    Info (12023): Found entity 1: condcheck File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/condcheck.sv Line: 2
+    Info (12023): Found entity 1: condcheck File: E:/TEC/Digitales/ProyectoTDD/Processor/condcheck.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file condcheck_tb.sv
-    Info (12023): Found entity 1: condcheck_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/condcheck_tb.sv Line: 3
+    Info (12023): Found entity 1: condcheck_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/condcheck_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
-    Info (12023): Found entity 1: decoder File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/decoder.sv Line: 1
+    Info (12023): Found entity 1: decoder File: E:/TEC/Digitales/ProyectoTDD/Processor/decoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decoder_tb.sv
-    Info (12023): Found entity 1: decoder_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/decoder_tb.sv Line: 2
+    Info (12023): Found entity 1: decoder_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/decoder_tb.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file data_memory.sv
-    Info (12023): Found entity 1: data_memory File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 1
+    Info (12023): Found entity 1: data_memory File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file data_memory_tb.sv
-    Info (12023): Found entity 1: data_memory_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory_tb.sv Line: 3
+    Info (12023): Found entity 1: data_memory_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file arm.sv
-    Info (12023): Found entity 1: arm File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/arm.sv Line: 1
+    Info (12023): Found entity 1: arm File: E:/TEC/Digitales/ProyectoTDD/Processor/arm.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file controller.sv
-    Info (12023): Found entity 1: controller File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/controller.sv Line: 1
+    Info (12023): Found entity 1: controller File: E:/TEC/Digitales/ProyectoTDD/Processor/controller.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file condlogic.sv
-    Info (12023): Found entity 1: condlogic File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/condlogic.sv Line: 1
+    Info (12023): Found entity 1: condlogic File: E:/TEC/Digitales/ProyectoTDD/Processor/condlogic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file condlogic_tb.sv
-    Info (12023): Found entity 1: condlogic_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/condlogic_tb.sv Line: 2
+    Info (12023): Found entity 1: condlogic_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/condlogic_tb.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file processor.sv
-    Info (12023): Found entity 1: processor File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/processor.sv Line: 1
+    Info (12023): Found entity 1: processor File: E:/TEC/Digitales/ProyectoTDD/Processor/processor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux3.sv
-    Info (12023): Found entity 1: mux3 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/mux3.sv Line: 1
+    Info (12023): Found entity 1: mux3 File: E:/TEC/Digitales/ProyectoTDD/Processor/mux3.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file processor_tb.sv
-    Info (12023): Found entity 1: processor_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/processor_tb.sv Line: 3
+    Info (12023): Found entity 1: processor_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/processor_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file mux3_tb.sv
-    Info (12023): Found entity 1: mux3_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/mux3_tb.sv Line: 3
+    Info (12023): Found entity 1: mux3_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/mux3_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file shifter.sv
-    Info (12023): Found entity 1: shifter File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/shifter.sv Line: 1
+    Info (12023): Found entity 1: shifter File: E:/TEC/Digitales/ProyectoTDD/Processor/shifter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shifter_tb.sv
-    Info (12023): Found entity 1: shifter_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/shifter_tb.sv Line: 2
+    Info (12023): Found entity 1: shifter_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/shifter_tb.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file datapath_tb.sv
-    Info (12023): Found entity 1: datapath_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/datapath_tb.sv Line: 3
+    Info (12023): Found entity 1: datapath_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/datapath_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file arm_tb.sv
-    Info (12023): Found entity 1: arm_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/arm_tb.sv Line: 3
+    Info (12023): Found entity 1: arm_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/arm_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file videogen.sv
-    Info (12023): Found entity 1: videoGen File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/videoGen.sv Line: 1
+    Info (12023): Found entity 1: videoGen File: E:/TEC/Digitales/ProyectoTDD/Processor/videoGen.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vgacontroller.sv
-    Info (12023): Found entity 1: vgaController File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/vgaController.sv Line: 3
+    Info (12023): Found entity 1: vgaController File: E:/TEC/Digitales/ProyectoTDD/Processor/vgaController.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file pll.sv
-    Info (12023): Found entity 1: pll File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/pll.sv Line: 4
+    Info (12023): Found entity 1: pll File: E:/TEC/Digitales/ProyectoTDD/Processor/pll.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file vga_initializer.sv
-    Info (12023): Found entity 1: vga_initializer File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/vga_initializer.sv Line: 1
+    Info (12023): Found entity 1: vga_initializer File: E:/TEC/Digitales/ProyectoTDD/Processor/vga_initializer.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file nbit_mult.sv
-    Info (12023): Found entity 1: Nbit_Mult File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/Nbit_Mult.sv Line: 1
+    Info (12023): Found entity 1: Nbit_Mult File: E:/TEC/Digitales/ProyectoTDD/Processor/Nbit_Mult.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file controller_tb.sv
-    Info (12023): Found entity 1: controller_tb File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/controller_tb.sv Line: 3
+    Info (12023): Found entity 1: controller_tb File: E:/TEC/Digitales/ProyectoTDD/Processor/controller_tb.sv Line: 3
 Info (12127): Elaborating entity "processor" for the top level hierarchy
-Info (12128): Elaborating entity "arm" for hierarchy "arm:arm_inst" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/processor.sv Line: 43
-Info (12128): Elaborating entity "controller" for hierarchy "arm:arm_inst|controller:c" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/arm.sv Line: 43
-Info (12128): Elaborating entity "decoder" for hierarchy "arm:arm_inst|controller:c|decoder:dec" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/controller.sv Line: 42
-Info (12128): Elaborating entity "condlogic" for hierarchy "arm:arm_inst|controller:c|condlogic:cl" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/controller.sv Line: 62
-Warning (10036): Verilog HDL or VHDL warning at condlogic.sv(9): object "FlagWrite" assigned a value but never read File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/condlogic.sv Line: 9
-Info (12128): Elaborating entity "flopr" for hierarchy "arm:arm_inst|controller:c|condlogic:cl|flopr:flagreg1" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/condlogic.sv Line: 13
-Info (12128): Elaborating entity "condcheck" for hierarchy "arm:arm_inst|controller:c|condlogic:cl|condcheck:cc" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/condlogic.sv Line: 19
-Info (12128): Elaborating entity "datapath" for hierarchy "arm:arm_inst|datapath:dp" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/arm.sv Line: 69
-Info (12128): Elaborating entity "flopr" for hierarchy "arm:arm_inst|datapath:dp|flopr:pcreg" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/datapath.sv Line: 49
-Info (12128): Elaborating entity "adder" for hierarchy "arm:arm_inst|datapath:dp|adder:pcadd4" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/datapath.sv Line: 55
-Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm_inst|datapath:dp|mux2:pcmux" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/datapath.sv Line: 69
-Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm_inst|datapath:dp|mux2:ra1mux" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/datapath.sv Line: 77
-Info (12128): Elaborating entity "register_file" for hierarchy "arm:arm_inst|datapath:dp|register_file:rf_inst" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/datapath.sv Line: 118
-Info (12128): Elaborating entity "extend" for hierarchy "arm:arm_inst|datapath:dp|extend:ext" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/datapath.sv Line: 125
-Info (12128): Elaborating entity "shifter" for hierarchy "arm:arm_inst|datapath:dp|shifter:shift_inst" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/datapath.sv Line: 134
-Info (12128): Elaborating entity "alu" for hierarchy "arm:arm_inst|datapath:dp|alu:main_alu" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/datapath.sv Line: 162
-Info (12128): Elaborating entity "Nbit_Sub" for hierarchy "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Sub:sub_op" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/alu.sv Line: 30
-Info (12128): Elaborating entity "full_subtractor" for hierarchy "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Sub:sub_op|full_subtractor:generate_N_bit_Sub[0].f" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/Nbit_Sub.sv Line: 24
-Info (12128): Elaborating entity "Nbit_Adder" for hierarchy "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Adder:adder_op" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/alu.sv Line: 31
-Info (12128): Elaborating entity "full_adder" for hierarchy "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Adder:adder_op|full_adder:generate_N_bit_Adder[0].f" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/Nbit_Adder.sv Line: 26
-Info (12128): Elaborating entity "Nbit_Mult" for hierarchy "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Mult:mult_op" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/alu.sv Line: 32
-Info (12128): Elaborating entity "instruction_memory" for hierarchy "instruction_memory:imem" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/processor.sv Line: 49
-Warning (10850): Verilog HDL warning at instruction_memory.sv(14): number of words (27) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/instruction_memory.sv Line: 14
-Info (10648): Verilog HDL Display System Task info at instruction_memory.sv(17): --- Depuración de Carga de IMEM --- File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/instruction_memory.sv Line: 17
-Info (10648): Verilog HDL Display System Task info at instruction_memory.sv(18): ROM[0x000] (esperado LDR R7) = e3a07000 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/instruction_memory.sv Line: 18
-Info (10648): Verilog HDL Display System Task info at instruction_memory.sv(19): ROM[0x001] (esperado MOV R0) = e5970000 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/instruction_memory.sv Line: 19
-Info (10648): Verilog HDL Display System Task info at instruction_memory.sv(20): ROM[0x002] (esperado MOV R1) = e5971004 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/instruction_memory.sv Line: 20
-Info (10648): Verilog HDL Display System Task info at instruction_memory.sv(21): --- Fin Depuración IMEM --- File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/instruction_memory.sv Line: 21
-Warning (10030): Net "ROM.data_a" at instruction_memory.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/instruction_memory.sv Line: 6
-Warning (10030): Net "ROM.waddr_a" at instruction_memory.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/instruction_memory.sv Line: 6
-Warning (10030): Net "ROM.we_a" at instruction_memory.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/instruction_memory.sv Line: 6
-Info (12128): Elaborating entity "data_memory" for hierarchy "data_memory:dmem" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/processor.sv Line: 58
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(28): \n--- Depuración de Carga de Memoria de Datos (RAM) --- File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 28
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(29): Memoria de datos cargada (RAM[0:1023]): File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 29
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 0) = 00000000 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 32
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 1) = 00000001 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 32
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 2) = 00000002 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 32
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 3) = 00000003 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 32
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 4) = 00000004 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 32
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 5) = 00000005 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 32
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 6) = 00000006 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 32
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 7) = 00000007 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 32
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 8) = 00000008 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 32
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 9) = 00000009 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 32
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(34):   Confirmando datos clave para la calculadora (basado en 'data_test_suma.dat'): File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 34
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(35):     RAM[0x000] (Operando 1, Word Index 0) = 0000000a File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 35
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(36):     RAM[0x001] (Operando 2, Word Index 1) = 00000005 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 36
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(37):     RAM[0x002] (Operador, Word Index 2) = 00000001 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 37
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(38):     RAM[0x003] (Espacio para Resultado, Word Index 3) = 00000000 File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 38
-Info (10648): Verilog HDL Display System Task info at data_memory.sv(39): --- Fin Depuración de Carga de Memoria de Datos --- File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/data_memory.sv Line: 39
-Info (12128): Elaborating entity "vga_initializer" for hierarchy "vga_initializer:vga_inst" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/processor.sv Line: 72
-Info (12128): Elaborating entity "pll" for hierarchy "vga_initializer:vga_inst|pll:vgapll" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/vga_initializer.sv Line: 10
-Info (12128): Elaborating entity "vgaController" for hierarchy "vga_initializer:vga_inst|vgaController:vgaCont" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/vga_initializer.sv Line: 13
-Warning (10230): Verilog HDL assignment warning at vgaController.sv(25): truncated value with size 32 to match size of target (10) File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/vgaController.sv Line: 25
-Warning (10230): Verilog HDL assignment warning at vgaController.sv(29): truncated value with size 32 to match size of target (10) File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/vgaController.sv Line: 29
-Info (12128): Elaborating entity "videoGen" for hierarchy "vga_initializer:vga_inst|videoGen:videoGen" File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/vga_initializer.sv Line: 16
-Warning (10230): Verilog HDL assignment warning at videoGen.sv(22): truncated value with size 32 to match size of target (16) File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/videoGen.sv Line: 22
-Warning (10030): Net "image_data.data_a" at videoGen.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/videoGen.sv Line: 7
-Warning (10030): Net "image_data.waddr_a" at videoGen.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/videoGen.sv Line: 7
-Warning (10030): Net "image_data.we_a" at videoGen.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/videoGen.sv Line: 7
+Info (12128): Elaborating entity "arm" for hierarchy "arm:arm_inst" File: E:/TEC/Digitales/ProyectoTDD/Processor/processor.sv Line: 43
+Info (12128): Elaborating entity "controller" for hierarchy "arm:arm_inst|controller:c" File: E:/TEC/Digitales/ProyectoTDD/Processor/arm.sv Line: 43
+Info (12128): Elaborating entity "decoder" for hierarchy "arm:arm_inst|controller:c|decoder:dec" File: E:/TEC/Digitales/ProyectoTDD/Processor/controller.sv Line: 42
+Info (12128): Elaborating entity "condlogic" for hierarchy "arm:arm_inst|controller:c|condlogic:cl" File: E:/TEC/Digitales/ProyectoTDD/Processor/controller.sv Line: 62
+Warning (10036): Verilog HDL or VHDL warning at condlogic.sv(9): object "FlagWrite" assigned a value but never read File: E:/TEC/Digitales/ProyectoTDD/Processor/condlogic.sv Line: 9
+Info (12128): Elaborating entity "condcheck" for hierarchy "arm:arm_inst|controller:c|condlogic:cl|condcheck:cc" File: E:/TEC/Digitales/ProyectoTDD/Processor/condlogic.sv Line: 13
+Info (12128): Elaborating entity "datapath" for hierarchy "arm:arm_inst|datapath:dp" File: E:/TEC/Digitales/ProyectoTDD/Processor/arm.sv Line: 69
+Info (12128): Elaborating entity "flopr" for hierarchy "arm:arm_inst|datapath:dp|flopr:pcreg" File: E:/TEC/Digitales/ProyectoTDD/Processor/datapath.sv Line: 49
+Info (12128): Elaborating entity "adder" for hierarchy "arm:arm_inst|datapath:dp|adder:pcadd4" File: E:/TEC/Digitales/ProyectoTDD/Processor/datapath.sv Line: 55
+Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm_inst|datapath:dp|mux2:pcmux" File: E:/TEC/Digitales/ProyectoTDD/Processor/datapath.sv Line: 69
+Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm_inst|datapath:dp|mux2:ra1mux" File: E:/TEC/Digitales/ProyectoTDD/Processor/datapath.sv Line: 77
+Info (12128): Elaborating entity "register_file" for hierarchy "arm:arm_inst|datapath:dp|register_file:rf_inst" File: E:/TEC/Digitales/ProyectoTDD/Processor/datapath.sv Line: 118
+Info (12128): Elaborating entity "extend" for hierarchy "arm:arm_inst|datapath:dp|extend:ext" File: E:/TEC/Digitales/ProyectoTDD/Processor/datapath.sv Line: 125
+Info (12128): Elaborating entity "shifter" for hierarchy "arm:arm_inst|datapath:dp|shifter:shift_inst" File: E:/TEC/Digitales/ProyectoTDD/Processor/datapath.sv Line: 134
+Info (12128): Elaborating entity "alu" for hierarchy "arm:arm_inst|datapath:dp|alu:main_alu" File: E:/TEC/Digitales/ProyectoTDD/Processor/datapath.sv Line: 162
+Info (12128): Elaborating entity "Nbit_Sub" for hierarchy "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Sub:sub_op" File: E:/TEC/Digitales/ProyectoTDD/Processor/alu.sv Line: 30
+Info (12128): Elaborating entity "full_subtractor" for hierarchy "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Sub:sub_op|full_subtractor:generate_N_bit_Sub[0].f" File: E:/TEC/Digitales/ProyectoTDD/Processor/Nbit_Sub.sv Line: 24
+Info (12128): Elaborating entity "Nbit_Adder" for hierarchy "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Adder:adder_op" File: E:/TEC/Digitales/ProyectoTDD/Processor/alu.sv Line: 31
+Info (12128): Elaborating entity "full_adder" for hierarchy "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Adder:adder_op|full_adder:generate_N_bit_Adder[0].f" File: E:/TEC/Digitales/ProyectoTDD/Processor/Nbit_Adder.sv Line: 26
+Info (12128): Elaborating entity "Nbit_Mult" for hierarchy "arm:arm_inst|datapath:dp|alu:main_alu|Nbit_Mult:mult_op" File: E:/TEC/Digitales/ProyectoTDD/Processor/alu.sv Line: 32
+Info (12128): Elaborating entity "instruction_memory" for hierarchy "instruction_memory:imem" File: E:/TEC/Digitales/ProyectoTDD/Processor/processor.sv Line: 49
+Warning (10850): Verilog HDL warning at instruction_memory.sv(14): number of words (9) in memory file does not match the number of elements in the address range [0:1023] File: E:/TEC/Digitales/ProyectoTDD/Processor/instruction_memory.sv Line: 14
+Info (10648): Verilog HDL Display System Task info at instruction_memory.sv(17): --- Depuración de Carga de IMEM --- File: E:/TEC/Digitales/ProyectoTDD/Processor/instruction_memory.sv Line: 17
+Info (10648): Verilog HDL Display System Task info at instruction_memory.sv(18): ROM[0x000] (esperado LDR R7) = e3a07000 File: E:/TEC/Digitales/ProyectoTDD/Processor/instruction_memory.sv Line: 18
+Info (10648): Verilog HDL Display System Task info at instruction_memory.sv(19): ROM[0x001] (esperado MOV R0) = e5970004 File: E:/TEC/Digitales/ProyectoTDD/Processor/instruction_memory.sv Line: 19
+Info (10648): Verilog HDL Display System Task info at instruction_memory.sv(20): ROM[0x002] (esperado MOV R1) = e5971008 File: E:/TEC/Digitales/ProyectoTDD/Processor/instruction_memory.sv Line: 20
+Info (10648): Verilog HDL Display System Task info at instruction_memory.sv(21): --- Fin Depuración IMEM --- File: E:/TEC/Digitales/ProyectoTDD/Processor/instruction_memory.sv Line: 21
+Warning (10030): Net "ROM.data_a" at instruction_memory.sv(6) has no driver or initial value, using a default initial value '0' File: E:/TEC/Digitales/ProyectoTDD/Processor/instruction_memory.sv Line: 6
+Warning (10030): Net "ROM.waddr_a" at instruction_memory.sv(6) has no driver or initial value, using a default initial value '0' File: E:/TEC/Digitales/ProyectoTDD/Processor/instruction_memory.sv Line: 6
+Warning (10030): Net "ROM.we_a" at instruction_memory.sv(6) has no driver or initial value, using a default initial value '0' File: E:/TEC/Digitales/ProyectoTDD/Processor/instruction_memory.sv Line: 6
+Info (12128): Elaborating entity "data_memory" for hierarchy "data_memory:dmem" File: E:/TEC/Digitales/ProyectoTDD/Processor/processor.sv Line: 58
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(28): \n--- Depuración de Carga de Memoria de Datos (RAM) --- File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 28
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(29): Memoria de datos cargada (RAM[0:1023]): File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 29
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 0) = 00000000 File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 32
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 1) = 00000001 File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 32
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 2) = 00000002 File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 32
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 3) = 00000003 File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 32
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 4) = 00000004 File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 32
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 5) = 00000005 File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 32
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 6) = 00000006 File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 32
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 7) = 00000007 File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 32
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 8) = 00000008 File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 32
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(32):   RAM[0x%3h] (Word Index 9) = 00000009 File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 32
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(34):   Confirmando datos clave para la calculadora (basado en 'data_test_suma.dat'): File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 34
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(35):     RAM[0x000] (Operando 1, Word Index 0) = 0000000a File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 35
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(36):     RAM[0x001] (Operando 2, Word Index 1) = 00000005 File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 36
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(37):     RAM[0x002] (Operador, Word Index 2) = 00000001 File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 37
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(38):     RAM[0x003] (Espacio para Resultado, Word Index 3) = 00000000 File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 38
+Info (10648): Verilog HDL Display System Task info at data_memory.sv(39): --- Fin Depuración de Carga de Memoria de Datos --- File: E:/TEC/Digitales/ProyectoTDD/Processor/data_memory.sv Line: 39
+Info (12128): Elaborating entity "vga_initializer" for hierarchy "vga_initializer:vga_inst" File: E:/TEC/Digitales/ProyectoTDD/Processor/processor.sv Line: 72
+Info (12128): Elaborating entity "pll" for hierarchy "vga_initializer:vga_inst|pll:vgapll" File: E:/TEC/Digitales/ProyectoTDD/Processor/vga_initializer.sv Line: 10
+Info (12128): Elaborating entity "vgaController" for hierarchy "vga_initializer:vga_inst|vgaController:vgaCont" File: E:/TEC/Digitales/ProyectoTDD/Processor/vga_initializer.sv Line: 13
+Warning (10230): Verilog HDL assignment warning at vgaController.sv(25): truncated value with size 32 to match size of target (10) File: E:/TEC/Digitales/ProyectoTDD/Processor/vgaController.sv Line: 25
+Warning (10230): Verilog HDL assignment warning at vgaController.sv(29): truncated value with size 32 to match size of target (10) File: E:/TEC/Digitales/ProyectoTDD/Processor/vgaController.sv Line: 29
+Info (12128): Elaborating entity "videoGen" for hierarchy "vga_initializer:vga_inst|videoGen:videoGen" File: E:/TEC/Digitales/ProyectoTDD/Processor/vga_initializer.sv Line: 16
+Warning (10230): Verilog HDL assignment warning at videoGen.sv(22): truncated value with size 32 to match size of target (16) File: E:/TEC/Digitales/ProyectoTDD/Processor/videoGen.sv Line: 22
+Warning (10030): Net "image_data.data_a" at videoGen.sv(7) has no driver or initial value, using a default initial value '0' File: E:/TEC/Digitales/ProyectoTDD/Processor/videoGen.sv Line: 7
+Warning (10030): Net "image_data.waddr_a" at videoGen.sv(7) has no driver or initial value, using a default initial value '0' File: E:/TEC/Digitales/ProyectoTDD/Processor/videoGen.sv Line: 7
+Warning (10030): Net "image_data.we_a" at videoGen.sv(7) has no driver or initial value, using a default initial value '0' File: E:/TEC/Digitales/ProyectoTDD/Processor/videoGen.sv Line: 7
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (144001): Generated suppressed messages file C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/output_files/processor.map.smsg
+Info (144001): Generated suppressed messages file E:/TEC/Digitales/ProyectoTDD/Processor/output_files/processor.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 4783 megabytes
-    Info: Processing ended: Fri Jun 13 06:48:03 2025
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Peak virtual memory: 4809 megabytes
+    Info: Processing ended: Sat Jun 14 16:57:33 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +--------------------------------------------+
 ; Analysis & Elaboration Suppressed Messages ;
 +--------------------------------------------+
-The suppressed messages can be found in C:/Users/YITAN/OneDrive/Escritorio/Proyecto TDD/ProyectoTDD/Processor/output_files/processor.map.smsg.
+The suppressed messages can be found in E:/TEC/Digitales/ProyectoTDD/Processor/output_files/processor.map.smsg.
 
 

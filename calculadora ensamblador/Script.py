@@ -19,5 +19,5 @@ def bin_to_hex_dat(bin_file_path, hex_file_path, instruction_size_bytes=4):
             f_hex.write(f"{instruction_int:08X}\n") # Formato 8 dígitos hexadecimales
 
 # Uso:
-bin_to_hex_dat('calculator.bin', 'program.dat')
+bin_to_hex_dat('calculadora ensamblador/calculator.bin', 'program.dat')
 print("program.dat generado exitosamente.")
