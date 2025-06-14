@@ -1,0 +1,55 @@
+module ps2_keyboard_receiver (
+    input        clk,        // Reloj principal (ej. 50 MHz)
+    input        reset_n,    // Reset activo en bajo
+    inout        ps2_clk,    // Línea de reloj PS/2
+    inout        ps2_data,   // Línea de datos PS/2
+    output reg   received,   // Pulso alto cuando se recibe un byte
+    output reg [7:0] scan_code // Código de tecla recibido
+);
+
+    // Variables internas
+    reg [3:0] bit_count;
+    reg [10:0] shift_reg;
+    reg ps2_clk_sync_0, ps2_clk_sync_1;
+    wire ps2_clk_falling;
+    reg ps2_clk_prev;
+
+    // Sincronización y detección de flanco
+    always @(posedge clk) begin
+        ps2_clk_sync_0 <= ps2_clk;
+        ps2_clk_sync_1 <= ps2_clk_sync_0;
+        ps2_clk_prev   <= ps2_clk_sync_1;
+    end
+
+    assign ps2_clk_falling = (ps2_clk_prev == 1'b1) && (ps2_clk_sync_1 == 1'b0);
+
+    always @(posedge clk or negedge reset_n) begin
+        if (!reset_n) begin
+            bit_count   <= 0;
+            shift_reg   <= 0;
+            scan_code   <= 0;
+            received    <= 0;
+        end else begin
+            received <= 0;  // default
+
+            if (ps2_clk_falling) begin
+                if (bit_count < 11) begin
+                    shift_reg <= {ps2_data, shift_reg[10:1]};
+                    bit_count <= bit_count + 1;
+                end
+
+                if (bit_count == 10) begin
+                    // Formato: 1 start (0), 8 data bits (LSB first), 1 parity, 1 stop (1)
+                    bit_count <= 0;
+
+                    // Verificar bit de inicio y de parada
+                    if (shift_reg[0] == 1'b0 && ps2_data == 1'b1) begin
+                        scan_code <= shift_reg[8:1];
+                        received <= 1'b1;
+                    end
+                end
+            end
+        end
+    end
+
+endmodule

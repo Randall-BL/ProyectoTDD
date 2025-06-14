@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at ps2.v(6): object "HEX0" differs only in case from object "hex0" in the same scope File: D:/TEC/FUNDA/Demonstration/FPGA/DE10_Standard_PS2/v/ps2.v Line: 6
+Info (10281): Verilog HDL Declaration information at ps2.v(8): object "HEX1" differs only in case from object "hex1" in the same scope File: D:/TEC/FUNDA/Demonstration/FPGA/DE10_Standard_PS2/v/ps2.v Line: 8

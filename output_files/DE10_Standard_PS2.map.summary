@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Sat Jun 14 07:02:34 2025
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : DE10_Standard_PS2
+Top-level Entity Name : DE10_Standard_PS2
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 41
+Total pins : 168
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0
