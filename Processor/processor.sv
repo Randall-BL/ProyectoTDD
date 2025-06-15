@@ -1,3 +1,5 @@
+// processor.sv
+
 module processor(
     input  logic         clk,
     input  logic         reset,
@@ -16,14 +18,20 @@ module processor(
     logic [31:0] WriteData;
     logic [31:0] ALUResult;
     logic        MemWrite;
-
-    // *** AGREGAR ESTAS SEÑALES INTERNAS PARA REGISTROS QUE SERÁN MONITOREADAS ***
+    
+    // Estas señales internas se usaban para el monitor en el testbench
+    logic        RegWrite;
+    logic        MemtoReg;
+    logic [3:0]  A3;
+    
+    // *** SEÑALES INTERNAS PARA REGISTROS QUE ERAN MONITOREADAS ***
+    // Estas solo se declaraban internamente, no eran puertos de salida
     logic [31:0] tb_R0_val;
     logic [31:0] tb_R1_val;
     logic [31:0] tb_R2_val;
     logic [31:0] tb_R3_val;
-    logic [31:0] tb_R7_val; // <--- ¡Agrega esta señal!
-
+    logic [31:0] tb_R7_val;
+    
     // Procesador ARM
     arm arm_inst(
         .clk(clk),
@@ -34,22 +42,28 @@ module processor(
         .ALUResult(ALUResult),
         .WriteData(WriteData),
         .ReadData(ReadData),
-        // *** CONECTAR LOS NUEVOS PUERTOS DE REGISTRO ***
-        .R0_val(tb_R0_val), // Conectando a las señales internas de processor
+        
+        // Conexiones de las señales de control para el monitor
+        .RegWrite(RegWrite),
+        .MemtoReg(MemtoReg),
+        .A3(A3),
+        
+        // Conexiones de los puertos de registro que sí existían
+        .R0_val(tb_R0_val),
         .R1_val(tb_R1_val),
         .R2_val(tb_R2_val),
         .R3_val(tb_R3_val),
-        .R7_val(tb_R7_val)  // <--- ¡Conecta tb_R7_val aquí!
+        .R7_val(tb_R7_val)
     );
-
+    
     // Memoria de Instrucciones
     instruction_memory imem(
         .A(PC),
         .RD(Instr)
     );
-
+    
     // Memoria de Datos
-    data_memory dmem( // Renombrado a dmem para claridad
+    data_memory dmem(
         .clk(clk),
         .mem_write(MemWrite),
         .address(ALUResult),
@@ -70,5 +84,4 @@ module processor(
         .g(g),
         .b(b)
     );
-
 endmodule

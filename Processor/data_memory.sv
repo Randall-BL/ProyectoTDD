@@ -23,7 +23,7 @@ module data_memory(
     initial begin
         // Carga los valores iniciales de la memoria de datos desde un archivo hexadecimal.
         // ¡IMPORTANTE!: Asegúrate de que la ruta del archivo sea ABSOLUTAMENTE CORRECTA.
-        $readmemh("E:/TEC/Digitales/ProyectoTDD/calculadora ensamblador/data_test_suma.dat", RAM);
+        $readmemh("C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/calculadora ensamblador/data_test_suma.dat", RAM);
         
         $display("\n--- Depuración de Carga de Memoria de Datos (RAM) ---");
         $display("Memoria de datos cargada (RAM[0:1023]):");

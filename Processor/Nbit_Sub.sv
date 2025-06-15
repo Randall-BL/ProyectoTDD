@@ -10,7 +10,7 @@ module Nbit_Sub #(parameter N = 32)(
     // Vector de préstamos entre etapas
     wire [N-1:0] carries;
     
-    // Generación de restadores completos (mantener igual)
+    // Generación de restadores completos
     genvar i;
     generate 
         for(i = 0; i < N; i = i + 1) begin: generate_N_bit_Sub
@@ -32,11 +32,11 @@ module Nbit_Sub #(parameter N = 32)(
                 );
         end
     endgenerate
-
-    // Generación de flags (corregida)
+    
+    // Generación de flags (CORREGIDA)
     assign zr_flag = (result == 0);                                   // Zero flag
     assign neg_flag = result[N-1];                                    // Negative flag
-    assign cry_flag = (a >= b);                                       // Carry flag (NOT borrow)
+    assign cry_flag = ~carries[N-1];                                  // ✅ CORRECCIÓN: Carry flag correcto
     assign of_flag = (~a[N-1] & b[N-1] & result[N-1]) |              // Overflow flag
-                    (a[N-1] & ~b[N-1] & ~result[N-1]);               // Corregida la lógica
+                    (a[N-1] & ~b[N-1] & ~result[N-1]);               
 endmodule

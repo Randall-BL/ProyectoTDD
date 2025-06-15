@@ -11,7 +11,7 @@ module instruction_memory(
 
     initial begin
         // Asegúrate de que esta ruta sea ABSOLUTAMENTE CORRECTA
-        $readmemh("E:/TEC/Digitales/ProyectoTDD/program.dat", ROM);
+        $readmemh("C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/program.dat", ROM);
 
         // --- AÑADE ESTOS DISPLAYS DE DEPURACIÓN AQUÍ ---
         $display("--- Depuración de Carga de IMEM ---");
