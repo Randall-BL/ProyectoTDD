@@ -1,0 +1,7 @@
+
+State Machine - |top|state
+Name state.WRITE_MEM state.OP2 state.OP1 state.IDLE 
+state.IDLE 0 0 0 0 
+state.OP1 0 0 1 1 
+state.OP2 0 1 0 1 
+state.WRITE_MEM 1 0 0 1 

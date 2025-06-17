@@ -1,0 +1,38 @@
+// Text overlay (8×16 font)
+//=======================================================
+module videoText #(
+    parameter CHAR_X_POS = 0,
+    parameter CHAR_Y_POS = 0
+)(
+    input  wire        vgaclk,
+    input  wire [9:0]  x,
+    input  wire [9:0]  y,
+    input  wire [3:0]  char_code,
+    input  wire [7:0]  bg_r,
+    input  wire [7:0]  bg_g,
+    input  wire [7:0]  bg_b,
+    output reg  [7:0]  r_out,
+    output reg  [7:0]  g_out,
+    output reg  [7:0]  b_out
+);
+    wire in_char = (x>=CHAR_X_POS && x<CHAR_X_POS+8 && y>=CHAR_Y_POS && y<CHAR_Y_POS+16);
+    wire [3:0] fx = x - CHAR_X_POS;
+    wire [3:0] fy = y - CHAR_Y_POS;
+    reg [7:0] font_rom [0:15][0:15];
+    integer i;
+    initial begin
+        // (Initialize font_rom same as before...)
+    end
+    wire pixel = font_rom[char_code][fy][7-fx];
+    always @(posedge vgaclk) begin
+    if (in_char && pixel) begin
+        r_out <= 8'hFF;
+        g_out <= 8'hFF;
+        b_out <= 8'hFF;
+    end else begin
+        r_out <= bg_r;
+        g_out <= bg_g;
+        b_out <= bg_b;
+    end
+	 end
+endmodule
