@@ -1,0 +1,197 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -4.531
+TNS   : -14.420
+
+Type  : Slow 1100mV 85C Model Setup 'video_sync_generator:syncgen|toggle'
+Slack : -3.603
+TNS   : -131.252
+
+Type  : Slow 1100mV 85C Model Setup 'ps2:u_ps2|clk_div[8]'
+Slack : -1.932
+TNS   : -9.133
+
+Type  : Slow 1100mV 85C Model Setup 'ps2:u_ps2|ps2_clk_i'
+Slack : -1.815
+TNS   : -34.773
+
+Type  : Slow 1100mV 85C Model Hold 'ps2:u_ps2|clk_div[8]'
+Slack : 0.069
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'ps2:u_ps2|ps2_clk_i'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'video_sync_generator:syncgen|toggle'
+Slack : 0.594
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.671
+TNS   : -7.404
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'video_sync_generator:syncgen|toggle'
+Slack : -0.394
+TNS   : -32.200
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'ps2:u_ps2|ps2_clk_i'
+Slack : -0.394
+TNS   : -13.419
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'ps2:u_ps2|clk_div[8]'
+Slack : -0.394
+TNS   : -4.303
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -4.444
+TNS   : -14.576
+
+Type  : Slow 1100mV 0C Model Setup 'video_sync_generator:syncgen|toggle'
+Slack : -3.595
+TNS   : -128.697
+
+Type  : Slow 1100mV 0C Model Setup 'ps2:u_ps2|clk_div[8]'
+Slack : -1.825
+TNS   : -8.949
+
+Type  : Slow 1100mV 0C Model Setup 'ps2:u_ps2|ps2_clk_i'
+Slack : -1.711
+TNS   : -32.952
+
+Type  : Slow 1100mV 0C Model Hold 'ps2:u_ps2|clk_div[8]'
+Slack : 0.107
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'ps2:u_ps2|ps2_clk_i'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.395
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'video_sync_generator:syncgen|toggle'
+Slack : 0.573
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.708
+TNS   : -7.174
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'video_sync_generator:syncgen|toggle'
+Slack : -0.394
+TNS   : -31.502
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'ps2:u_ps2|ps2_clk_i'
+Slack : -0.394
+TNS   : -12.624
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'ps2:u_ps2|clk_div[8]'
+Slack : -0.394
+TNS   : -4.302
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -3.552
+TNS   : -6.999
+
+Type  : Fast 1100mV 85C Model Setup 'video_sync_generator:syncgen|toggle'
+Slack : -2.006
+TNS   : -65.305
+
+Type  : Fast 1100mV 85C Model Setup 'ps2:u_ps2|clk_div[8]'
+Slack : -0.959
+TNS   : -4.448
+
+Type  : Fast 1100mV 85C Model Setup 'ps2:u_ps2|ps2_clk_i'
+Slack : -0.852
+TNS   : -15.169
+
+Type  : Fast 1100mV 85C Model Hold 'ps2:u_ps2|clk_div[8]'
+Slack : 0.108
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'ps2:u_ps2|ps2_clk_i'
+Slack : 0.118
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'video_sync_generator:syncgen|toggle'
+Slack : 0.266
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.777
+TNS   : -6.309
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'video_sync_generator:syncgen|toggle'
+Slack : 0.005
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'ps2:u_ps2|clk_div[8]'
+Slack : 0.051
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'ps2:u_ps2|ps2_clk_i'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -3.064
+TNS   : -5.897
+
+Type  : Fast 1100mV 0C Model Setup 'video_sync_generator:syncgen|toggle'
+Slack : -1.729
+TNS   : -56.236
+
+Type  : Fast 1100mV 0C Model Setup 'ps2:u_ps2|clk_div[8]'
+Slack : -0.885
+TNS   : -4.032
+
+Type  : Fast 1100mV 0C Model Setup 'ps2:u_ps2|ps2_clk_i'
+Slack : -0.706
+TNS   : -12.311
+
+Type  : Fast 1100mV 0C Model Hold 'ps2:u_ps2|ps2_clk_i'
+Slack : 0.104
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'ps2:u_ps2|clk_div[8]'
+Slack : 0.110
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'video_sync_generator:syncgen|toggle'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.809
+TNS   : -7.348
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'video_sync_generator:syncgen|toggle'
+Slack : 0.045
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'ps2:u_ps2|clk_div[8]'
+Slack : 0.066
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'ps2:u_ps2|ps2_clk_i'
+Slack : 0.139
+TNS   : 0.000
+
+------------------------------------------------------------

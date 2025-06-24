@@ -1,0 +1,96 @@
+//=======================================================
+// Top-level entity: DE10_Standard_default
+// Combines PS2 keyboard input and VGA text overlay
+//=======================================================
+module DE10_Standard_default(
+    input  wire        CLOCK_50,    // 50 MHz clock
+    input  wire [3:0]  KEY,         // KEY[0] used as reset (active low)
+    inout  wire        PS2_CLK,
+    inout  wire        PS2_DAT,
+    // VGA Output
+    output wire [7:0]  VGA_R,
+    output wire [7:0]  VGA_G,
+    output wire [7:0]  VGA_B,
+    output wire        VGA_HS,
+    output wire        VGA_VS,
+    output wire        VGA_BLANK_N,
+    output wire        VGA_SYNC_N,
+    output wire        VGA_CLK
+);
+
+    // Internal reset
+    wire rst_n = KEY[0];
+
+    // PS2 decoded character
+    wire [3:0] char_code;
+
+    // Instantiate PS2 receiver
+    ps2 u_ps2(
+        .iRST_n    (rst_n),
+        .iCLK_50   (CLOCK_50),
+        .PS2_CLK   (PS2_CLK),
+        .PS2_DAT   (PS2_DAT),
+        .char_code (char_code)
+    );
+
+    // VGA timing signals
+    wire pixel_clk, hsync, vsync, blank_n, sync_n;
+    wire [9:0] x, y;
+    
+    // background/color data (feeding to controller)
+    wire [7:0] bg_r = 8'h00;
+    wire [7:0] bg_g = 8'h00;
+    wire [7:0] bg_b = 8'h00;
+    wire [7:0] tx_r, tx_g, tx_b;
+
+    // Generate pixel clock and sync
+    video_sync_generator u_vsync_gen(
+        .iCLK_50    (CLOCK_50),
+        .iRST_N     (rst_n),
+        .oPIXEL_CLK (pixel_clk),
+        .oHSYNC     (hsync),
+        .oVSYNC     (vsync),
+        .oBLANK_N   (blank_n),
+        .oSYNC_N    (sync_n),
+        .oX         (x),
+        .oY         (y)
+    );
+
+    // Overlay text
+    videoText #(
+        .CHAR_X_POS(300),
+        .CHAR_Y_POS(220)
+    ) u_text(
+        .vgaclk    (pixel_clk),
+        .x         (x),
+        .y         (y),
+        .char_code (char_code),
+        .bg_r      (bg_r),
+        .bg_g      (bg_g),
+        .bg_b      (bg_b),
+        .r_out     (tx_r),
+        .g_out     (tx_g),
+        .b_out     (tx_b)
+    );
+
+    // Send to VGA DAC via controller
+    vga_controller u_vga_ctrl(
+        .iDATA_R    (tx_r),
+        .iDATA_G    (tx_g),
+        .iDATA_B    (tx_b),
+        .iPIXEL_CLK (pixel_clk),
+        .iHSYNC     (hsync),
+        .iVSYNC     (vsync),
+        .iBLANK_N   (blank_n),
+        .iSYNC_N    (sync_n),
+        .oVGA_R     (VGA_R),
+        .oVGA_G     (VGA_G),
+        .oVGA_B     (VGA_B),
+        .oVGA_HS    (VGA_HS),
+        .oVGA_VS    (VGA_VS),
+        .oVGA_BLANK_N(VGA_BLANK_N),
+        .oVGA_SYNC_N (VGA_SYNC_N),
+        .oVGA_CLK   (VGA_CLK)
+    );
+
+endmodule
