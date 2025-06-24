@@ -1,0 +1,380 @@
+# Reading pref.tcl
+# do processor_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/Nbit_Sub.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:11 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/Nbit_Sub.sv 
+# -- Compiling module Nbit_Sub
+# 
+# Top level modules:
+# 	Nbit_Sub
+# End time: 01:26:11 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/Nbit_Adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:11 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/Nbit_Adder.sv 
+# -- Compiling module Nbit_Adder
+# 
+# Top level modules:
+# 	Nbit_Adder
+# End time: 01:26:11 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/full_subtractor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:11 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/full_subtractor.sv 
+# -- Compiling module full_subtractor
+# 
+# Top level modules:
+# 	full_subtractor
+# End time: 01:26:11 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/full_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:11 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 01:26:11 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:11 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 01:26:11 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/flopr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:11 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/flopr.sv 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 01:26:11 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:11 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 01:26:11 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/mux2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:11 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/mux2.sv 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 01:26:12 on Jun 15,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/register_file.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:12 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/register_file.sv 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 01:26:12 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:12 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/extend.sv 
+# -- Compiling module extend
+# 
+# Top level modules:
+# 	extend
+# End time: 01:26:12 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:12 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 01:26:12 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/condcheck.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:12 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/condcheck.sv 
+# -- Compiling module condcheck
+# 
+# Top level modules:
+# 	condcheck
+# End time: 01:26:12 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:12 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 01:26:12 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/arm.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:12 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/arm.sv 
+# -- Compiling module arm
+# 
+# Top level modules:
+# 	arm
+# End time: 01:26:12 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:12 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/controller.sv 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 01:26:12 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/condlogic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:12 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/condlogic.sv 
+# -- Compiling module condlogic
+# 
+# Top level modules:
+# 	condlogic
+# End time: 01:26:12 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/processor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:12 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/processor.sv 
+# -- Compiling module processor
+# 
+# Top level modules:
+# 	processor
+# End time: 01:26:12 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/shifter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:12 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/shifter.sv 
+# -- Compiling module shifter
+# 
+# Top level modules:
+# 	shifter
+# End time: 01:26:12 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/vgaController.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:12 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/vgaController.sv 
+# -- Compiling module vgaController
+# 
+# Top level modules:
+# 	vgaController
+# End time: 01:26:12 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/pll.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:13 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/pll.sv 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 01:26:13 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/vga_initializer.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:13 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/vga_initializer.sv 
+# -- Compiling module vga_initializer
+# 
+# Top level modules:
+# 	vga_initializer
+# End time: 01:26:13 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/Nbit_Mult.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:13 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/Nbit_Mult.sv 
+# -- Compiling module Nbit_Mult
+# 
+# Top level modules:
+# 	Nbit_Mult
+# End time: 01:26:13 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/instruction_memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:13 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/instruction_memory.sv 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 01:26:13 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/data_memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:13 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/data_memory.sv 
+# -- Compiling module data_memory
+# 
+# Top level modules:
+# 	data_memory
+# End time: 01:26:13 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/videoGen.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:13 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/videoGen.sv 
+# -- Compiling module videoGen
+# 
+# Top level modules:
+# 	videoGen
+# End time: 01:26:13 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor {C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/processor_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:26:13 on Jun 15,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor" C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/processor_tb.sv 
+# -- Compiling module processor_tb
+# 
+# Top level modules:
+# 	processor_tb
+# End time: 01:26:13 on Jun 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  processor_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" processor_tb 
+# Start time: 01:26:13 on Jun 15,2025
+# Loading sv_std.std
+# Loading work.processor_tb
+# Loading work.processor
+# Loading work.arm
+# Loading work.controller
+# Loading work.decoder
+# Loading work.condlogic
+# Loading work.condcheck
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.mux2
+# Loading work.register_file
+# Loading work.extend
+# Loading work.shifter
+# Loading work.alu
+# Loading work.Nbit_Sub
+# Loading work.Nbit_Adder
+# Loading work.Nbit_Mult
+# Loading work.instruction_memory
+# Loading work.data_memory
+# Loading work.vga_initializer
+# Loading work.pll
+# Loading work.vgaController
+# Loading work.videoGen
+# Loading work.full_subtractor
+# Loading work.full_adder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# --- Depuración de Carga de IMEM ---
+# ROM[0x000] (esperado LDR R7) = e3a07000
+# ROM[0x001] (esperado MOV R0) = e5970004
+# ROM[0x002] (esperado MOV R1) = e5971008
+# --- Fin Depuración IMEM ---
+# 
+# --- Depuración de Carga de Memoria de Datos (RAM) ---
+# Memoria de datos cargada (RAM[0:1023]):
+#   RAM[0x000] (Word Index 0) = 00000004
+#   RAM[0x001] (Word Index 1) = 00000002
+#   RAM[0x002] (Word Index 2) = 00000001
+#   RAM[0x003] (Word Index 3) = 00000000
+#   RAM[0x004] (Word Index 4) = 00000000
+#   RAM[0x005] (Word Index 5) = 00000000
+#   RAM[0x006] (Word Index 6) = 00000000
+#   RAM[0x007] (Word Index 7) = 00000000
+#   RAM[0x008] (Word Index 8) = 00000000
+#   RAM[0x009] (Word Index 9) = 00000000
+#   Confirmando datos clave para la calculadora (basado en 'data_test_suma.dat'):
+#     RAM[0x000] (Operando 1, Word Index 0) = 00000004
+#     RAM[0x001] (Operando 2, Word Index 1) = 00000002
+#     RAM[0x002] (Operador, Word Index 2) = 00000001
+#     RAM[0x003] (Espacio para Resultado, Word Index 3) = 00000000
+# --- Fin Depuración de Carga de Memoria de Datos ---
+# ** Warning: (vsim-7) Failed to open readmem file "image_data.mem" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/videoGen.sv(11)
+#    Time: 0 ps  Iteration: 0  Instance: /processor_tb/dut/vga_inst/videoGen
+# 
+# === INICIANDO PRUEBA BÁSICA DEL PROCESADOR ARM ===
+# 
+# Time=0 ns | PC=00000000 | Instr=e3a07000 | ALURes=00000000 | WrtDat=00000000 | MemWrt=0 | RdDat=xxxxxxxx | RegWrt=1 | MemtoReg=0 | WrtReg= 7 | R0=00000000 R1=00000000 R2=00000000 R3=00000000 R7=00000000
+# Time=5000 ns | PC=00000000 | Instr=e3a07000 | ALURes=00000000 | WrtDat=00000000 | MemWrt=0 | RdDat=00000004 | RegWrt=1 | MemtoReg=0 | WrtReg= 7 | R0=00000000 R1=00000000 R2=00000000 R3=00000000 R7=00000000
+# Liberando reset...
+# 
+# --- VERIFICANDO CONECTIVIDAD BÁSICA ---
+# Time=55000 ns | PC=00000004 | Instr=e5970004 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000004 | RegWrt=1 | MemtoReg=1 | WrtReg= 0 | R0=00000000 R1=00000000 R2=00000000 R3=00000000 R7=00000000
+# Time=65000 ns | PC=00000008 | Instr=e5971008 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000002 | RegWrt=1 | MemtoReg=1 | WrtReg= 1 | R0=00000004 R1=00000000 R2=00000000 R3=00000000 R7=00000000
+# Time=75000 ns | PC=0000000c | Instr=e0803001 | ALURes=00000006 | WrtDat=00000002 | MemWrt=0 | RdDat=00000001 | RegWrt=1 | MemtoReg=0 | WrtReg= 3 | R0=00000004 R1=00000002 R2=00000000 R3=00000000 R7=00000000
+# Time=85000 ns | PC=00000010 | Instr=e5873010 | ALURes=00000010 | WrtDat=00000006 | MemWrt=1 | RdDat=00000002 | RegWrt=0 | MemtoReg=0 | WrtReg= 3 | R0=00000004 R1=00000002 R2=00000000 R3=00000006 R7=00000000
+# Time=95000 ns | ESCRIBIENDO en RAM[0x004] = 00000006 (Dirección en bus: 00000010)
+# Time=95000 ns | PC=00000014 | Instr=e0403001 | ALURes=00000002 | WrtDat=00000002 | MemWrt=0 | RdDat=00000000 | RegWrt=1 | MemtoReg=0 | WrtReg= 3 | R0=00000004 R1=00000002 R2=00000000 R3=00000006 R7=00000000
+# Time=105000 ns | PC=00000018 | Instr=e5873014 | ALURes=00000014 | WrtDat=00000002 | MemWrt=1 | RdDat=00000004 | RegWrt=0 | MemtoReg=0 | WrtReg= 3 | R0=00000004 R1=00000002 R2=00000000 R3=00000002 R7=00000000
+# Time=115000 ns | ESCRIBIENDO en RAM[0x005] = 00000002 (Dirección en bus: 00000014)
+# Time=115000 ns | PC=0000001c | Instr=e0203001 | ALURes=00000000 | WrtDat=00000002 | MemWrt=0 | RdDat=00000000 | RegWrt=1 | MemtoReg=0 | WrtReg= 3 | R0=00000004 R1=00000002 R2=00000000 R3=00000002 R7=00000000
+# Time=125000 ns | PC=00000020 | Instr=e5873018 | ALURes=00000018 | WrtDat=00000000 | MemWrt=1 | RdDat=00000004 | RegWrt=0 | MemtoReg=0 | WrtReg= 3 | R0=00000004 R1=00000002 R2=00000000 R3=00000000 R7=00000000
+# Time=135000 ns | ESCRIBIENDO en RAM[0x006] = 00000000 (Dirección en bus: 00000018)
+# Time=135000 ns | PC=00000024 | Instr=ed003b01 | ALURes=00000000 | WrtDat=00000002 | MemWrt=0 | RdDat=00000000 | RegWrt=0 | MemtoReg=0 | WrtReg= 3 | R0=00000004 R1=00000002 R2=00000000 R3=00000000 R7=00000000
+# Time=145000 ns | PC=00000028 | Instr=e587301c | ALURes=0000001c | WrtDat=00000000 | MemWrt=1 | RdDat=00000004 | RegWrt=0 | MemtoReg=0 | WrtReg= 3 | R0=00000004 R1=00000002 R2=00000000 R3=00000000 R7=00000000
+# Time=155000 ns | ESCRIBIENDO en RAM[0x007] = 00000000 (Dirección en bus: 0000001c)
+# Time=155000 ns | PC=0000002c | Instr=eafffffe | ALURes=00000000 | WrtDat=00000000 | MemWrt=0 | RdDat=00000000 | RegWrt=0 | MemtoReg=0 | WrtReg=15 | R0=00000004 R1=00000002 R2=00000000 R3=00000000 R7=00000000
+# Time=165000 ns | PC=00000000 | Instr=e3a07000 | ALURes=00000000 | WrtDat=00000004 | MemWrt=0 | RdDat=00000004 | RegWrt=1 | MemtoReg=0 | WrtReg= 7 | R0=00000004 R1=00000002 R2=00000000 R3=00000000 R7=00000000
+# Time=175000 ns | PC=00000004 | Instr=e5970004 | ALURes=00000004 | WrtDat=00000000 | MemWrt=0 | RdDat=00000004 | RegWrt=1 | MemtoReg=1 | WrtReg= 0 | R0=00000004 R1=00000002 R2=00000000 R3=00000000 R7=00000000
+# Time=185000 ns | PC=00000008 | Instr=e5971008 | ALURes=00000008 | WrtDat=00000000 | MemWrt=0 | RdDat=00000002 | RegWrt=1 | MemtoReg=1 | WrtReg= 1 | R0=00000004 R1=00000002 R2=00000000 R3=00000000 R7=00000000
+# Time=195000 ns | PC=0000000c | Instr=e0803001 | ALURes=00000006 | WrtDat=00000002 | MemWrt=0 | RdDat=00000001 | RegWrt=1 | MemtoReg=0 | WrtReg= 3 | R0=00000004 R1=00000002 R2=00000000 R3=00000000 R7=00000000
+# Time=205000 ns | PC=00000010 | Instr=e5873010 | ALURes=00000010 | WrtDat=00000006 | MemWrt=1 | RdDat=00000002 | RegWrt=0 | MemtoReg=0 | WrtReg= 3 | R0=00000004 R1=00000002 R2=00000000 R3=00000006 R7=00000000
+# Time=215000 ns | ESCRIBIENDO en RAM[0x004] = 00000006 (Dirección en bus: 00000010)
+# Time=215000 ns | PC=00000014 | Instr=e0403001 | ALURes=00000002 | WrtDat=00000002 | MemWrt=0 | RdDat=00000006 | RegWrt=1 | MemtoReg=0 | WrtReg= 3 | R0=00000004 R1=00000002 R2=00000000 R3=00000006 R7=00000000
+# Time=225000 ns | PC=00000018 | Instr=e5873014 | ALURes=00000014 | WrtDat=00000002 | MemWrt=1 | RdDat=00000004 | RegWrt=0 | MemtoReg=0 | WrtReg= 3 | R0=00000004 R1=00000002 R2=00000000 R3=00000002 R7=00000000
+# Time=235000 ns | ESCRIBIENDO en RAM[0x005] = 00000002 (Dirección en bus: 00000014)
+# Time=235000 ns | PC=0000001c | Instr=e0203001 | ALURes=00000000 | WrtDat=00000002 | MemWrt=0 | RdDat=00000002 | RegWrt=1 | MemtoReg=0 | WrtReg= 3 | R0=00000004 R1=00000002 R2=00000000 R3=00000002 R7=00000000
+# 
+# === VERIFICACIÓN BÁSICA COMPLETADA ===
+# Si no hay errores de conectividad, el diseño básico funciona.
+# ** Note: $finish    : C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/processor_tb.sv(81)
+#    Time: 245 ns  Iteration: 1  Instance: /processor_tb
+# 1
+# Break in Module processor_tb at C:/Users/YITAN/OneDrive/Escritorio/CommitChris/ProyectoTDD/Processor/processor_tb.sv line 81
+# End time: 01:27:21 on Jun 15,2025, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 1

@@ -1,0 +1,34 @@
+// Módulo condlogic que usa tu condcheck
+module condlogic(
+    input  logic       clk, reset,
+    input  logic [3:0] Cond,
+    input  logic [3:0] ALUFlags,
+    input  logic [1:0] FlagW,
+    input  logic       PCS, RegW, MemW,
+    output logic       PCSrc, RegWrite, MemWrite
+);
+    logic [3:0] Flags;
+    logic       CondEx;
+
+    // Flags register
+    always_ff @(posedge clk, posedge reset)
+        if (reset)
+            Flags <= 4'b0;
+        else begin
+            if (FlagW[1]) Flags[3:2] <= ALUFlags[3:2];
+            if (FlagW[0]) Flags[1:0] <= ALUFlags[1:0];
+        end
+
+    // Condition check
+    condcheck cc(
+        .Cond(Cond),
+        .Flags(Flags),
+        .CondEx(CondEx)
+    );
+
+    // Output logic
+    assign PCSrc = PCS & CondEx;
+    assign RegWrite = RegW & CondEx;
+    assign MemWrite = MemW & CondEx;
+
+endmodule

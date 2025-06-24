@@ -1,0 +1,86 @@
+module alu #(parameter N = 32)(
+    input  logic [N-1:0] A, B,      // Entradas de 32 bits
+    input  logic [1:0]   ALU_Sel,   // Selector de operación
+    output logic [N-1:0] ALU_Result,// Resultado de 32 bits
+    output logic [3:0]   ALU_Flags  // Flags NZCV
+);
+    // Flags intermedios
+    logic add_CFlag, add_VFlag, add_ZFlag, add_NFlag;
+    logic sub_CFlag, sub_VFlag, sub_ZFlag, sub_NFlag;
+    logic Neg, Z, C, V;
+
+    // Resultados intermedios
+    wire [N-1:0] add_result;
+    wire [N-1:0] sub_result;
+
+    // Instancias de sumador y restador
+    Nbit_Sub #(.N(N)) sub_op(
+        .a(A), 
+        .b(B), 
+        .result(sub_result),
+        .cry_flag(sub_CFlag),
+        .zr_flag(sub_ZFlag),
+        .of_flag(sub_VFlag),
+        .neg_flag(sub_NFlag)
+    );
+
+    Nbit_Adder #(.N(N)) adder_op(
+        .a(A),
+        .b(B),
+        .result(add_result),
+        .zr_flag(add_ZFlag),
+        .cry_flag(add_CFlag),
+        .of_flag(add_VFlag),
+        .neg_flag(add_NFlag)
+    );
+
+    // Lógica de selección y flags
+    always_comb begin
+        // Valores por defecto
+        ALU_Result = '0;
+        {Neg, Z, C, V} = 4'b0000;
+
+        case(ALU_Sel)
+            2'b00: begin // ADD
+                ALU_Result = add_result;
+                Neg = ALU_Result[N-1];  // Usa el resultado actual
+                Z = (ALU_Result == 0);
+                C = add_CFlag;
+                V = add_VFlag;
+            end
+
+            2'b01: begin // SUB
+                ALU_Result = sub_result;
+                Neg = ALU_Result[N-1];  // Usa el resultado actual
+                Z = (ALU_Result == 0);
+                C = sub_CFlag;
+                V = sub_VFlag;
+            end
+
+            2'b10: begin // AND
+                ALU_Result = A & B;
+                Neg = ALU_Result[N-1];  // Usa el resultado actual
+                Z = (ALU_Result == 0);
+                C = 1'b0;
+                V = 1'b0;
+            end
+
+            2'b11: begin // OR
+                ALU_Result = A | B;
+                Neg = ALU_Result[N-1];  // Usa el resultado actual
+                Z = (ALU_Result == 0);
+                C = 1'b0;
+                V = 1'b0;
+            end
+
+            default: begin
+                ALU_Result = '0;
+                {Neg, Z, C, V} = 4'b0000;
+            end
+        endcase
+    end
+
+    // Empaquetado de flags
+    assign ALU_Flags = {Neg, Z, C, V};
+
+endmodule

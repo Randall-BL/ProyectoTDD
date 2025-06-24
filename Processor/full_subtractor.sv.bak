@@ -1,0 +1,29 @@
+module full_subtractor(
+    input  logic a,         // Minuendo
+    input  logic b,         // Sustraendo
+    input  logic c_in,      // Préstamo de entrada (borrow in)
+    output logic result,    // Diferencia
+    output logic c_out      // Préstamo de salida (borrow out)
+);
+
+    // Método 1: Usando asignaciones directas
+    assign result = a ^ b ^ c_in;                    // Diferencia
+    assign c_out = (~a & b) | (~(a ^ b) & c_in);    // Préstamo de salida
+
+    /* 
+    // Método 2: Usando señales intermedias (más legible)
+    logic diff_ab;         // Diferencia entre a y b
+    logic borrow_ab;       // Préstamo de a-b
+    logic borrow_diff;     // Préstamo de la diferencia
+
+    // Cálculo de la diferencia
+    assign diff_ab = a ^ b;                // XOR para diferencia inicial
+    assign result = diff_ab ^ c_in;        // Diferencia final con préstamo
+
+    // Cálculo del préstamo
+    assign borrow_ab = (~a) & b;           // Préstamo de a-b
+    assign borrow_diff = (~diff_ab) & c_in; // Préstamo de la diferencia
+    assign c_out = borrow_ab | borrow_diff; // Préstamo total
+    */
+
+endmodule

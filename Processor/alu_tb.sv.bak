@@ -1,0 +1,115 @@
+`timescale 1ns/1ps
+
+module alu_tb();
+    // Parámetros
+    localparam N = 32;
+    
+    // Señales de prueba
+    logic [N-1:0] A, B;
+    logic [1:0]   ALU_Sel;
+    logic [N-1:0] ALU_Result;
+    logic [3:0]   ALU_Flags;
+
+    // Instancia de la ALU
+    alu #(N) dut(
+        .A(A),
+        .B(B),
+        .ALU_Sel(ALU_Sel),
+        .ALU_Result(ALU_Result),
+        .ALU_Flags(ALU_Flags)
+    );
+
+    // Función para mostrar flags
+    function void display_flags(logic [3:0] flags);
+        $display("Flags [NZCV]: %b", flags);
+        $display("N (Negative): %b", flags[3]);
+        $display("Z (Zero)    : %b", flags[2]);
+        $display("C (Carry)   : %b", flags[1]);
+        $display("V (Overflow): %b", flags[0]);
+    endfunction
+
+    // Estímulos y verificación
+    initial begin
+        $display("\n=== Pruebas de la ALU ===");
+
+        // Prueba 1: Suma básica positiva
+        $display("\nPrueba 1: Suma básica (5 + 3)");
+        A = 32'd5;
+        B = 32'd3;
+        ALU_Sel = 2'b00;  // ADD
+        #10;
+        $display("A = %0d, B = %0d", A, B);
+        $display("Resultado = %0d", ALU_Result);
+        display_flags(ALU_Flags);
+
+        // Prueba 2: Suma con overflow
+        $display("\nPrueba 2: Suma con overflow");
+        A = 32'h7FFFFFFF;  // Máximo positivo
+        B = 32'd1;
+        ALU_Sel = 2'b00;  // ADD
+        #10;
+        $display("A = 0x%h, B = %0d", A, B);
+        $display("Resultado = 0x%h", ALU_Result);
+        display_flags(ALU_Flags);
+
+        // Prueba 3: Resta básica
+        $display("\nPrueba 3: Resta (10 - 3)");
+        A = 32'd10;
+        B = 32'd3;
+        ALU_Sel = 2'b01;  // SUB
+        #10;
+        $display("A = %0d, B = %0d", A, B);
+        $display("Resultado = %0d", ALU_Result);
+        display_flags(ALU_Flags);
+
+        // Prueba 4: Resta con resultado negativo
+        $display("\nPrueba 4: Resta con resultado negativo");
+        A = 32'd5;
+        B = 32'd10;
+        ALU_Sel = 2'b01;  // SUB
+        #10;
+        $display("A = %0d, B = %0d", A, B);
+        $display("Resultado = %0d", ALU_Result);
+        display_flags(ALU_Flags);
+
+        // Prueba 5: AND
+        $display("\nPrueba 5: AND");
+        A = 32'hF0F0;
+        B = 32'hFF00;
+        ALU_Sel = 2'b10;  // AND
+        #10;
+        $display("A = 0x%h, B = 0x%h", A, B);
+        $display("Resultado = 0x%h", ALU_Result);
+        display_flags(ALU_Flags);
+
+        // Prueba 6: OR
+        $display("\nPrueba 6: OR");
+        A = 32'hF0F0;
+        B = 32'h0F0F;
+        ALU_Sel = 2'b11;  // OR
+        #10;
+        $display("A = 0x%h, B = 0x%h", A, B);
+        $display("Resultado = 0x%h", ALU_Result);
+        display_flags(ALU_Flags);
+
+        // Prueba 7: Resultado cero
+        $display("\nPrueba 7: Resultado cero");
+        A = 32'd5;
+        B = 32'd5;
+        ALU_Sel = 2'b01;  // SUB
+        #10;
+        $display("A = %0d, B = %0d", A, B);
+        $display("Resultado = %0d", ALU_Result);
+        display_flags(ALU_Flags);
+
+        $display("\n=== Fin de las pruebas ===\n");
+        #10 $finish;
+    end
+
+    // Monitor de cambios
+    initial begin
+        $monitor("Time=%0t A=0x%h B=0x%h ALU_Sel=%b Result=0x%h Flags=%b",
+                 $time, A, B, ALU_Sel, ALU_Result, ALU_Flags);
+    end
+
+endmodule

@@ -1,0 +1,18 @@
+// To use in program computer
+module flopr #(
+    parameter WIDTH = 32    // Ancho parametrizable
+)(
+    input  logic             clk,    // Señal de reloj
+    input  logic             reset,  // Reset asíncrono
+    input  logic [WIDTH-1:0] d,      // Entrada de datos
+    output logic [WIDTH-1:0] q       // Salida de datos
+);
+
+    // En cada flanco positivo del reloj o reset
+    always_ff @(posedge clk, posedge reset)
+        if (reset)
+            q <= {WIDTH{1'b0}};  // Reset a cero
+        else
+            q <= d;              // Cargar nuevo valor
+            
+endmodule

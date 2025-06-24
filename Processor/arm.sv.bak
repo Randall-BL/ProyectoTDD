@@ -1,0 +1,65 @@
+module arm(
+    input  logic        clk,
+    input  logic        reset,
+    output logic [31:0] PC,
+    input  logic [31:0] Instr,
+    output logic        MemWrite,
+    output logic [31:0] ALUResult,
+    output logic [31:0] WriteData,
+    input  logic [31:0] ReadData
+);
+    // Señales internas
+    logic [3:0]  Flags;
+    logic [3:0]  Cond;
+    logic [1:0]  FlagW;
+    logic        PCS, RegW, MemtoReg;
+    logic [1:0]  ALUSrc, ImmSrc, RegSrc;
+    logic [1:0]  ALUControl;
+    logic        CondEx;
+
+    // Extraer código de condición de la instrucción
+    assign Cond = Instr[31:28];
+
+    // Instancia del decoder
+    decoder c(
+        .Op(Instr[27:26]),
+        .Funct(Instr[25:20]),
+        .Rd(Instr[15:12]),
+        .FlagW(FlagW),
+        .PCS(PCS),
+        .RegW(RegW),
+        .MemW(MemWrite),
+        .MemtoReg(MemtoReg),
+        .ALUSrc(ALUSrc),
+        .ImmSrc(ImmSrc),
+        .RegSrc(RegSrc),
+        .ALUControl(ALUControl)
+    );
+
+    // Instancia del condcheck
+    condcheck cc(
+        .Cond(Cond),
+        .Flags(Flags),
+        .CondEx(CondEx)
+    );
+
+    // Datapath
+    datapath dp(
+        .clk(clk),
+        .reset(reset),
+        .RegSrc(RegSrc),
+        .RegWrite(RegW & CondEx),  // Condicional
+        .ImmSrc(ImmSrc),
+        .ALUSrc(ALUSrc),
+        .ALUControl(ALUControl),
+        .MemtoReg(MemtoReg),
+        .PCS(PCS & CondEx),        // Condicional
+        .Flags(Flags),
+        .PC(PC),
+        .Instr(Instr),
+        .ALUResult(ALUResult),
+        .WriteData(WriteData),
+        .ReadData(ReadData)
+    );
+
+endmodule

@@ -1,0 +1,74 @@
+module condlogic_tb();
+    // Señales
+    logic       clk;
+    logic       reset;
+    logic [3:0] Cond;
+    logic [3:0] ALUFlags;
+    logic [1:0] FlagW;
+    logic       PCS, RegW, MemW;
+    logic       PCSrc, RegWrite, MemWrite;
+
+    // Instancia del módulo
+    condlogic dut(.*);
+
+    // Generador de reloj
+    always begin
+        clk = 1; #5;
+        clk = 0; #5;
+    end
+
+    // Test
+    initial begin
+        $display("=== Test Basico de CondLogic ===\n");
+
+        // Reset inicial
+        reset = 1;
+        Cond = 4'b0000;      // EQ
+        ALUFlags = 4'b0000;
+        FlagW = 2'b00;
+        PCS = 0; RegW = 0; MemW = 0;
+        @(posedge clk); #1;
+        reset = 0;
+
+        // Test 1: Condición EQ con Z=1 (igual)
+        $display("Test 1: EQ con Z=1");
+        Cond = 4'b0000;      // EQ
+        ALUFlags = 4'b0100;   // Z=1
+        FlagW = 2'b10;       // Actualizar NZ
+        PCS = 1; RegW = 1; MemW = 1;
+        @(posedge clk); #1;
+        $display("  PCSrc=%b RegWrite=%b MemWrite=%b (Esperado: 1,1,1)", 
+                 PCSrc, RegWrite, MemWrite);
+
+        // Test 2: Condición EQ con Z=0 (no igual)
+        $display("\nTest 2: EQ con Z=0");
+        ALUFlags = 4'b0000;   // Z=0
+        @(posedge clk); #1;
+        $display("  PCSrc=%b RegWrite=%b MemWrite=%b (Esperado: 0,0,0)", 
+                 PCSrc, RegWrite, MemWrite);
+
+        // Test 3: Condición AL (siempre)
+        $display("\nTest 3: AL (siempre)");
+        Cond = 4'b1110;      // AL
+        @(posedge clk); #1;
+        $display("  PCSrc=%b RegWrite=%b MemWrite=%b (Esperado: 1,1,1)", 
+                 PCSrc, RegWrite, MemWrite);
+
+        // Test 4: Actualización de flags
+        $display("\nTest 4: Actualizacion de flags");
+        Cond = 4'b0000;      // EQ
+        ALUFlags = 4'b1100;   // N=1, Z=1
+        FlagW = 2'b11;       // Actualizar todos los flags
+        @(posedge clk); #1;
+        $display("  Flags=%b (Esperado: 1100)", dut.Flags);
+
+        $display("\n=== Fin del Test ===");
+        $finish;
+    end
+
+    // Monitor
+    initial begin
+        $monitor("Time=%0t Cond=%b Flags=%b CondEx=%b", 
+                 $time, Cond, dut.Flags, dut.CondEx);
+    end
+endmodule

@@ -1,0 +1,64 @@
+`timescale 1ns/1ps
+
+module mux2_tb();
+    // Parámetros
+    localparam WIDTH = 32;
+    
+    // Señales de prueba
+    logic [WIDTH-1:0] d0;
+    logic [WIDTH-1:0] d1;
+    logic             s;
+    logic [WIDTH-1:0] y;
+
+    // Instancia del módulo
+    mux2 #(WIDTH) dut(
+        .d0 (d0),
+        .d1 (d1),
+        .s  (s),
+        .y  (y)
+    );
+
+    // Estímulos y verificación
+    initial begin
+        $display("\n=== Pruebas del Multiplexor 2:1 ===");
+
+        // Prueba 1: Seleccionar d0 (PCPlus4)
+        d0 = 32'h0000_0004;  // PC + 4
+        d1 = 32'h1234_5678;  // Algún resultado
+        s  = 0;              // Seleccionar d0
+        #10;
+        $display("Prueba 1: Seleccionar d0 (PCPlus4)");
+        $display("d0 = 0x%h, d1 = 0x%h, s = %b", d0, d1, s);
+        $display("y  = 0x%h %s", y, (y === d0) ? "(CORRECTO)" : "(ERROR)");
+        
+        // Prueba 2: Seleccionar d1 (Result)
+        d0 = 32'h0000_0008;
+        d1 = 32'h8765_4321;
+        s  = 1;              // Seleccionar d1
+        #10;
+        $display("\nPrueba 2: Seleccionar d1 (Result)");
+        $display("d0 = 0x%h, d1 = 0x%h, s = %b", d0, d1, s);
+        $display("y  = 0x%h %s", y, (y === d1) ? "(CORRECTO)" : "(ERROR)");
+
+        // Prueba 3: Cambios rápidos
+        $display("\nPrueba 3: Cambios rápidos");
+        for (int i = 0; i < 4; i++) begin
+            d0 = $random;
+            d1 = $random;
+            s  = $random;
+            #5;
+            $display("d0 = 0x%h, d1 = 0x%h, s = %b", d0, d1, s);
+            $display("y  = 0x%h %s", y, (y === (s ? d1 : d0)) ? "(CORRECTO)" : "(ERROR)");
+        end
+
+        $display("\n=== Fin de las pruebas ===\n");
+        #10 $finish;
+    end
+
+    // Monitor de cambios
+    initial begin
+        $monitor("Time=%0t d0=0x%h d1=0x%h s=%b y=0x%h", 
+                 $time, d0, d1, s, y);
+    end
+
+endmodule

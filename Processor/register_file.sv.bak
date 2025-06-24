@@ -1,0 +1,21 @@
+module register_file(
+    input  logic        clk,
+    input  logic        we3,          // Write enable
+    input  logic [3:0]  ra1, ra2,     // Read addresses
+    input  logic [3:0]  wa3,          // Write address
+    input  logic [31:0] wd3,          // Write data
+    output logic [31:0] rd1, rd2      // Read data
+);
+    // 16 registros de 32 bits
+    logic [31:0] registers[14:0];
+
+    // Escritura síncrona
+    always_ff @(posedge clk)
+        if (we3) 
+            registers[wa3] <= wd3;
+
+    // Lectura asíncrona
+    assign rd1 = (ra1 == 4'b1111) ? 32'h0 : registers[ra1];  // R15 = 0
+    assign rd2 = (ra2 == 4'b1111) ? 32'h0 : registers[ra2];  // R15 = 0
+
+endmodule

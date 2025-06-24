@@ -1,0 +1,149 @@
+`timescale 1ns/1ps
+
+module datapath_tb();
+    // Señales de prueba
+    logic        clk, reset;
+    logic [1:0]  RegSrc;
+    logic        RegWrite;
+    logic [1:0]  ImmSrc;
+    logic [1:0]  ALUSrc;
+    logic [1:0]  ALUControl;
+    logic        MemWrite;
+    logic        MemtoReg;
+    logic        PCSrc;
+    logic        BL;
+    logic        ShiftEn;
+    logic [31:0] PC;
+    logic [31:0] ALUResult;
+    logic [31:0] WriteData;
+    logic [31:0] ReadData;
+    logic [31:0] Instr;
+    logic [3:0]  ALUFlags;
+
+    // Instancia del datapath
+    datapath dut(
+        .clk(clk),
+        .reset(reset),
+        .RegSrc(RegSrc),
+        .RegWrite(RegWrite),
+        .ImmSrc(ImmSrc),
+        .ALUSrc(ALUSrc),
+        .ALUControl(ALUControl),
+        .MemWrite(MemWrite),
+        .MemtoReg(MemtoReg),
+        .PCSrc(PCSrc),
+        .BL(BL),
+        .ShiftEn(ShiftEn),
+        .PC(PC),
+        .ALUResult(ALUResult),
+        .WriteData(WriteData),
+        .ReadData(ReadData),
+        .Instr(Instr),
+        .ALUFlags(ALUFlags)
+    );
+
+    // Generación de reloj
+    always begin
+        clk = 1; #5;
+        clk = 0; #5;
+    end
+
+    // Función de verificación
+    function void check_result(string test_name, logic [31:0] expected);
+        if (ALUResult !== expected) begin
+            $display("Error en %s:", test_name);
+            $display("  ALUResult = %h (esperado: %h)", ALUResult, expected);
+            $display("  Flags = %b", ALUFlags);
+        end else begin
+            $display("Correcto - %s:", test_name);
+            $display("  ALUResult = %h", ALUResult);
+            $display("  Flags = %b", ALUFlags);
+        end
+    endfunction
+
+    // Estímulos
+    initial begin
+        $display("\n=== Iniciando pruebas del Datapath ===\n");
+
+        // Reset inicial
+        reset = 1;
+        RegSrc = 2'b00;
+        RegWrite = 0;
+        ImmSrc = 2'b00;
+        ALUSrc = 2'b00;
+        ALUControl = 2'b00;
+        MemWrite = 0;
+        MemtoReg = 0;
+        PCSrc = 0;
+        BL = 0;
+        ShiftEn = 0;
+        ReadData = 32'h0;
+        Instr = 32'h0;
+        #10;
+        reset = 0;
+        #10;
+
+        // Prueba 1: ADD R1, R2, R3
+        $display("\nPrueba 1: ADD R1, R2, R3");
+        Instr = 32'hE0821003;  // Ejemplo de codificación
+        RegSrc = 2'b00;        // Usar registros de la instrucción
+        RegWrite = 1;          // Escribir resultado
+        ImmSrc = 2'b00;        // No inmediato
+        ALUSrc = 2'b00;        // Usar registro
+        ALUControl = 2'b00;    // ADD
+        MemWrite = 0;
+        MemtoReg = 0;
+        PCSrc = 0;
+        #10;
+
+        // Prueba 2: ADD R1, R2, #100
+        $display("\nPrueba 2: ADD R1, R2, #100");
+        Instr = 32'hE2821064;  // Ejemplo de codificación
+        RegSrc = 2'b00;
+        RegWrite = 1;
+        ImmSrc = 2'b00;
+        ALUSrc = 2'b01;        // Usar inmediato
+        ALUControl = 2'b00;    // ADD
+        #10;
+
+        // Prueba 3: LDR R1, [R2, #4]
+        $display("\nPrueba 3: LDR R1, [R2, #4]");
+        Instr = 32'hE5921004;
+        RegSrc = 2'b00;
+        RegWrite = 1;
+        ImmSrc = 2'b01;
+        ALUSrc = 2'b01;
+        ALUControl = 2'b00;
+        MemtoReg = 1;
+        ReadData = 32'h12345678;
+        #10;
+
+        // Prueba 4: MOV R1, R2, LSL #2
+        $display("\nPrueba 4: MOV R1, R2, LSL #2");
+        Instr = 32'hE1A01102;
+        RegSrc = 2'b00;
+        RegWrite = 1;
+        ALUSrc = 2'b00;
+        ShiftEn = 1;
+        #10;
+
+        // Prueba 5: BL etiqueta
+        $display("\nPrueba 5: BL etiqueta");
+        Instr = 32'hEB000100;
+        RegSrc = 2'b01;
+        RegWrite = 1;
+        BL = 1;
+        PCSrc = 1;
+        #10;
+
+        $display("\n=== Pruebas completadas ===");
+        #10 $finish;
+    end
+
+    // Monitor de señales importantes
+    initial begin
+        $monitor("Time=%0t PC=%h Instr=%h ALUResult=%h Flags=%b",
+                 $time, PC, Instr, ALUResult, ALUFlags);
+    end
+
+endmodule

@@ -1,0 +1,41 @@
+module processor(
+    input  logic        clk,
+    input  logic        reset
+    // Puedes agregar más puertos si necesitas observar señales internas
+);
+    // Señales internas
+    logic [31:0] PC;
+    logic [31:0] Instr;
+    logic [31:0] ReadData;
+    logic [31:0] WriteData;
+    logic [31:0] DataAdr;
+    logic        MemWrite;
+
+    // Procesador ARM
+    arm arm(
+        .clk(clk),
+        .reset(reset),
+        .PC(PC),
+        .Instr(Instr),
+        .MemWrite(MemWrite),
+        .ALUResult(DataAdr),    // ALUResult se usa como dirección de memoria
+        .WriteData(WriteData),
+        .ReadData(ReadData)
+    );
+
+    // Memoria de Instrucciones
+    instruction_memory imem(
+        .A(PC),
+        .RD(Instr)
+    );
+
+    // Memoria de Datos
+    data_memory dmem(
+        .clk(clk),
+        .WE(MemWrite),
+        .A(DataAdr),
+        .WD(WriteData),
+        .RD(ReadData)
+    );
+
+endmodule

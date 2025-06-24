@@ -1,0 +1,107 @@
+`timescale 1ns/1ps
+
+module shifter_tb();
+    // Señales de prueba
+    logic [31:0] a;
+    logic [4:0]  shamt;
+    logic [1:0]  sh_type;
+    logic [31:0] y;
+    
+    // Instancia del módulo a probar
+    shifter dut(
+        .a(a),
+        .shamt(shamt),
+        .sh_type(sh_type),
+        .y(y)
+    );
+    
+    // Función de verificación
+    function automatic void check_shift(string test_name);
+        logic [31:0] expected;
+        
+        case(sh_type)
+            2'b00: expected = a << shamt;
+            2'b01: expected = a >> shamt;
+            2'b10: expected = $signed(a) >>> shamt;
+            2'b11: expected = (a >> shamt) | (a << (32-shamt));
+        endcase
+        
+        if (y !== expected) begin
+            $display("Error en %s:", test_name);
+            $display("  Entrada: %h", a);
+            $display("  Shamt: %d, Tipo: %b", shamt, sh_type);
+            $display("  Resultado: %h", y);
+            $display("  Esperado: %h", expected);
+        end else begin
+            $display("Correcto - %s:", test_name);
+            $display("  Entrada: %h", a);
+            $display("  Shamt: %d, Tipo: %b", shamt, sh_type);
+            $display("  Resultado: %h", y);
+        end
+    endfunction
+    
+    // Estímulos
+    initial begin
+        $display("\n=== Iniciando pruebas del Shifter ===\n");
+        
+        // Prueba 1: LSL básico
+        $display("Prueba 1: LSL básico");
+        a = 32'h0000_00FF;
+        shamt = 5'd4;
+        sh_type = 2'b00;
+        #1; check_shift("LSL básico");
+        
+        // Prueba 2: LSR básico
+        $display("\nPrueba 2: LSR básico");
+        a = 32'hFF00_0000;
+        shamt = 5'd4;
+        sh_type = 2'b01;
+        #1; check_shift("LSR básico");
+        
+        // Prueba 3: ASR con número positivo
+        $display("\nPrueba 3: ASR positivo");
+        a = 32'h7F00_0000;
+        shamt = 5'd4;
+        sh_type = 2'b10;
+        #1; check_shift("ASR positivo");
+        
+        // Prueba 4: ASR con número negativo
+        $display("\nPrueba 4: ASR negativo");
+        a = 32'hFF00_0000;
+        shamt = 5'd4;
+        sh_type = 2'b10;
+        #1; check_shift("ASR negativo");
+        
+        // Prueba 5: ROR básico
+        $display("\nPrueba 5: ROR básico");
+        a = 32'hF000_000F;
+        shamt = 5'd4;
+        sh_type = 2'b11;
+        #1; check_shift("ROR básico");
+        
+        // Prueba 6: Desplazamiento de 0 bits
+        $display("\nPrueba 6: Sin desplazamiento");
+        a = 32'hAAAA_AAAA;
+        shamt = 5'd0;
+        sh_type = 2'b00;
+        #1; check_shift("Sin desplazamiento");
+        
+        // Prueba 7: Desplazamiento máximo
+        $display("\nPrueba 7: Desplazamiento máximo");
+        a = 32'hFFFF_FFFF;
+        shamt = 5'd31;
+        sh_type = 2'b00;
+        #1; check_shift("Desplazamiento máximo");
+        
+        // Prueba 8: Valor aleatorio
+        $display("\nPrueba 8: Valor aleatorio");
+        a = $random;
+        shamt = $random & 5'h1F;
+        sh_type = $random & 2'b11;
+        #1; check_shift("Valor aleatorio");
+        
+        $display("\n=== Pruebas completadas ===");
+        #10 $finish;
+    end
+    
+endmodule

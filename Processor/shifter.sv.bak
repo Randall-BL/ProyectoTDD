@@ -1,0 +1,38 @@
+module shifter(
+    input  logic [31:0] a,          // Valor a desplazar
+    input  logic [4:0]  shamt,      // Cantidad de desplazamiento (0-31)
+    input  logic [1:0]  sh_type,    // Tipo de desplazamiento
+    output logic [31:0] y           // Resultado
+);
+
+    // Tipos de desplazamiento:
+    // 00 = LSL (Logical Shift Left)
+    // 01 = LSR (Logical Shift Right)
+    // 10 = ASR (Arithmetic Shift Right)
+    // 11 = ROR (Rotate Right)
+
+    always_comb begin
+        case(sh_type)
+            2'b00: begin // LSL - Logical Shift Left
+                y = a << shamt;
+            end
+            
+            2'b01: begin // LSR - Logical Shift Right
+                y = a >> shamt;
+            end
+            
+            2'b10: begin // ASR - Arithmetic Shift Right
+                y = $signed(a) >>> shamt;
+            end
+            
+            2'b11: begin // ROR - Rotate Right
+                y = (a >> shamt) | (a << (32-shamt));
+            end
+            
+            default: begin
+                y = a; // Sin desplazamiento
+            end
+        endcase
+    end
+
+endmodule

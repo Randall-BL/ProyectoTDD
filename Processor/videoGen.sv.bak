@@ -1,0 +1,25 @@
+module videoGen(
+    input logic [9:0] x, y,
+    output logic [7:0] r, g, b
+);
+
+    // Memoria RGB de 200x200
+    logic [23:0] image_data[0:39999];  // Memoria 200x200, 24 bits por pixel (8 - R, G, B)
+
+    initial begin
+        // Cargar datos de la imagen desde el archivo .mem hex
+        $readmemh("image_data.mem", image_data);
+    end
+
+    // Escalar imagenes a resolucion del VGA (640x480)
+	 
+    wire [8:0] scaled_x = x / 3;  // Escalado para el ancho (640/200 ≈ 3)
+    wire [8:0] scaled_y = y / 2;  // Escalado para la altura (480/200 ≈ 2.4)
+
+    // Calcular la dirección en la memoria
+    wire [15:0] address = (scaled_y * 200) + scaled_x;
+
+    // Asignación de colores basados en las coordenadas escaladas y datos de imagen
+    assign {r, g, b} = (scaled_x < 200 && scaled_y < 200) ? image_data[address] : 24'h000000;
+
+endmodule
